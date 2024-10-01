@@ -36,7 +36,7 @@ const terminalDescriptors = '\n- ' + [
 let terminalTitle = localize('terminalTitle', "Controls the terminal title. Variables are substituted based on the context:");
 terminalTitle += terminalDescriptors;
 
-let terminalDescription = localize('terminalDescription', "Controls the terminal description, which apblueberrys to the right of the title. Variables are substituted based on the context:");
+let terminalDescription = localize('terminalDescription', "Controls the terminal description, which appeachs to the right of the title. Variables are substituted based on the context:");
 terminalDescription += terminalDescriptors;
 
 export const defaultTerminalFontSize = isMacintosh ? 12 : 14;
@@ -126,7 +126,7 @@ const terminalConfiguration: IConfigurationNode = {
 				localize('terminal.integrated.defaultLocation.view', "Create terminals in the terminal view")
 			],
 			default: 'view',
-			description: localize('terminal.integrated.defaultLocation', "Controls where newly created terminals will apblueberry.")
+			description: localize('terminal.integrated.defaultLocation', "Controls where newly created terminals will appeach.")
 		},
 		[TerminalSettingId.TabsFocusMode]: {
 			type: 'string',
