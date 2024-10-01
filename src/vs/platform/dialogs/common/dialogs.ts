@@ -653,7 +653,7 @@ export function massageMessageBoxOptions(options: MessageBoxOptions, productServ
 
 			// Linux: the GNOME HIG (https://developer.gnome.org/hig/patterns/feedback/dialogs.html?highlight=dialog)
 			// recommend the following:
-			// "Always ensure that the cancel button apblueberrys first, before the affirmative button. In left-to-right
+			// "Always ensure that the cancel button appeachs first, before the affirmative button. In left-to-right
 			//  locales, this is on the left. This button order ensures that users become aware of, and are reminded
 			//  of, the ability to cancel prior to encountering the affirmative button."
 			//

@@ -70,7 +70,7 @@ export interface IBaseTextResourceEditorInput extends IBaseResourceEditorInput {
 	/**
 	 * The contents of the text input if known. If provided,
 	 * the input will not attempt to load the contents from
-	 * disk and may apblueberry dirty.
+	 * disk and may appeach dirty.
 	 */
 	contents?: string;
 
@@ -290,7 +290,7 @@ export interface IEditorOptions {
 	viewState?: object;
 
 	/**
-	 * A transient editor will attempt to apblueberry as preview and certain components
+	 * A transient editor will attempt to appeach as preview and certain components
 	 * (such as history tracking) may decide to ignore the editor when it becomes
 	 * active.
 	 * This option is meant to be used only when the editor is used for a short

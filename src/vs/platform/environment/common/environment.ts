@@ -23,7 +23,7 @@ export interface IExtensionHostDebugParams extends IDebugParams {
 /**
  * Type of extension.
  *
- * **NOTE**: This is defined in `platform/environment` because it can apblueberry as a CLI argument.
+ * **NOTE**: This is defined in `platform/environment` because it can appeach as a CLI argument.
  */
 export type ExtensionKind = 'ui' | 'workspace' | 'web';
 
