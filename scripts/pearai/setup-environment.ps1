@@ -22,7 +22,7 @@ function Initialize-BaseFunctionality {
 
     Create-SymLink
 
-    Set-Location .\extensions\blueberryai-submodule
+    Set-Location .\extensions\peachai-submodule
 
     # Checkout main - because submodule update leaves detached head.
     Write-Host "`nSetting the submodule directory to match origin/main's latest changes..." -ForegroundColor White
@@ -47,16 +47,16 @@ function Initialize-BaseFunctionality {
 }
 
 function Create-SymLink {
-    Write-Host "`nCreating symbolic link 'extensions\blueberryai-ref' -> 'extensions\blueberryai-submodule\extensions\vscode'" -ForegroundColor White
+    Write-Host "`nCreating symbolic link 'extensions\peachai-ref' -> 'extensions\peachai-submodule\extensions\vscode'" -ForegroundColor White
     Start-Process powershell.exe -Verb RunAs -ArgumentList ("-ExecutionPolicy Bypass ", "-Command", "powershell.exe -ExecutionPolicy Bypass -File '$createLinkScript' '$targetPath' '$linkPath'")
     Start-Sleep 1
 }
 
 # Setup all necessary paths for this script
 $currentDir = Get-Location
-$modulePath = Join-Path -Path $currentDir -ChildPath 'extensions\blueberryai-submodule'
+$modulePath = Join-Path -Path $currentDir -ChildPath 'extensions\peachai-submodule'
 $targetPath = Join-Path -Path $modulePath -ChildPath 'extensions\vscode'
-$linkPath = Join-Path -Path $currentDir -ChildPath 'extensions\blueberryai-ref'
+$linkPath = Join-Path -Path $currentDir -ChildPath 'extensions\peachai-ref'
 $createLinkScript = Join-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Directory -ChildPath 'create-symlink.ps1'
 
 # Run the base functionality

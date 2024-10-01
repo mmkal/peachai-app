@@ -13,7 +13,7 @@ execute() {
 }
 
 # Define the submodule directory
-submodule_dir="extensions/blueberryai-submodule"
+submodule_dir="extensions/peachai-submodule"
 
 # Change to the submodule directory and install dependencies
 execute "cd $submodule_dir" "Failed to change directory to $submodule_dir"

@@ -795,7 +795,7 @@ function createDOMPurify() {
 			if (parent.namespaceURI === MATHML_NAMESPACE && !MATHML_TEXT_INTEGRATION_POINTS[parentTagName]) {
 				return false;
 			} // We disallow tags that are specific for MathML
-			// or SVG and should never apblueberry in HTML namespace
+			// or SVG and should never appeach in HTML namespace
 
 
 			return !ALL_MATHML_TAGS[tagName] && (COMMON_SVG_AND_HTML_ELEMENTS[tagName] || !ALL_SVG_TAGS[tagName]);

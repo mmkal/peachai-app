@@ -23,9 +23,9 @@ set VSCODE_CLI=1
 set ELECTRON_ENABLE_LOGGING=1
 set ELECTRON_ENABLE_STACK_DUMPING=1
 
-:: Get blueberry AI
+:: Get peach AI
 setlocal
-cd extensions/blueberryai-submodule
+cd extensions/peachai-submodule
 powershell.exe -executionpolicy bypass -file .\scripts\build-extension.ps1
 endlocal
 

@@ -40,16 +40,16 @@ execute() {
 
 # Setup all necessary paths for this script
 app_dir=$(pwd)
-target_path="$app_dir/extensions/blueberryai-submodule/extensions/vscode"
-link_path="$app_dir/extensions/blueberryai-ref"
+target_path="$app_dir/extensions/peachai-submodule/extensions/vscode"
+link_path="$app_dir/extensions/peachai-ref"
 
 # Run the base functionality
 echo -e "\nInitializing sub-modules..."
 
 # Check if the submodule directory already exists
-if [ -d "$app_dir/extensions/blueberryai-submodule" ]; then
-    echo "Removing existing blueberryai-submodule directory"
-    execute "rm -rf $app_dir/extensions/blueberryai-submodule" "Failed to remove existing blueberryai-submodule directory"
+if [ -d "$app_dir/extensions/peachai-submodule" ]; then
+    echo "Removing existing peachai-submodule directory"
+    execute "rm -rf $app_dir/extensions/peachai-submodule" "Failed to remove existing peachai-submodule directory"
 fi
 
 # Clone the submodule extension folder
@@ -68,7 +68,7 @@ else
 fi
 
 
-execute "cd ./extensions/blueberryai-submodule" "Failed to change directory to extensions/blueberryai-submodule"
+execute "cd ./extensions/peachai-submodule" "Failed to change directory to extensions/peachai-submodule"
 echo -e "\nSetting the submodule directory to match origin/main's latest changes..."
 
 # Set the current branch to match the latest origin/main branch for the submodule.
