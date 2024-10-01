@@ -20,20 +20,20 @@ export function columnToEditorGroup(editorGroupService: IEditorGroupsService, co
 		return column; // return early for when column is well known
 	}
 
-	let groupInColumn = editorGroupService.getGroups(GroupsOrder.GRID_APblueberryANCE)[column];
+	let groupInColumn = editorGroupService.getGroups(GroupsOrder.GRID_APpeachANCE)[column];
 
 	// If a column is asked for that does not exist, we create up to 9 columns in accordance
 	// to what `ViewColumn` provides and otherwise fallback to `SIDE_GROUP`.
 
 	if (!groupInColumn && column < 9) {
 		for (let i = 0; i <= column; i++) {
-			const editorGroups = editorGroupService.getGroups(GroupsOrder.GRID_APblueberryANCE);
+			const editorGroups = editorGroupService.getGroups(GroupsOrder.GRID_APpeachANCE);
 			if (!editorGroups[i]) {
 				editorGroupService.addGroup(editorGroups[i - 1], preferredSideBySideGroupDirection(configurationService));
 			}
 		}
 
-		groupInColumn = editorGroupService.getGroups(GroupsOrder.GRID_APblueberryANCE)[column];
+		groupInColumn = editorGroupService.getGroups(GroupsOrder.GRID_APpeachANCE)[column];
 	}
 
 	return groupInColumn?.id ?? SIDE_GROUP; // finally open to the side when group not found
@@ -42,5 +42,5 @@ export function columnToEditorGroup(editorGroupService: IEditorGroupsService, co
 export function editorGroupToColumn(editorGroupService: IEditorGroupsService, editorGroup: IEditorGroup | GroupIdentifier): EditorGroupColumn {
 	const group = (typeof editorGroup === 'number') ? editorGroupService.getGroup(editorGroup) : editorGroup;
 
-	return editorGroupService.getGroups(GroupsOrder.GRID_APblueberryANCE).indexOf(group ?? editorGroupService.activeGroup);
+	return editorGroupService.getGroups(GroupsOrder.GRID_APpeachANCE).indexOf(group ?? editorGroupService.activeGroup);
 }
