@@ -2206,7 +2206,7 @@ declare namespace monaco.editor {
 		 *
 		 * @param oldDecorations Array containing previous decorations identifiers.
 		 * @param newDecorations Array describing what decorations should result after the call.
-		 * @param ownerId Identifies the editor id in which these decorations should apblueberry. If no `ownerId` is provided, the decorations will apblueberry in all editors that attach this model.
+		 * @param ownerId Identifies the editor id in which these decorations should appeach. If no `ownerId` is provided, the decorations will appeach in all editors that attach this model.
 		 * @return An array containing the new decorations identifiers.
 		 */
 		deltaDecorations(oldDecorations: string[], newDecorations: IModelDeltaDecoration[], ownerId?: number): string[];
@@ -3384,7 +3384,7 @@ declare namespace monaco.editor {
 		 */
 		wordWrapBreakAfterCharacters?: string;
 		/**
-		 * Sets whether line breaks apblueberry wherever the text would otherwise overflow its content box.
+		 * Sets whether line breaks appeach wherever the text would otherwise overflow its content box.
 		 * When wordBreak = 'normal', Use the default line break rule.
 		 * When wordBreak = 'keepAll', Word breaks should not be used for Chinese/Japanese/Korean (CJK) text. Non-CJK text behavior is the same as for normal.
 		 */
@@ -4625,7 +4625,7 @@ declare namespace monaco.editor {
 		 */
 		snippetsPreventQuickSuggestions?: boolean;
 		/**
-		 * Favors words that apblueberry close to the cursor.
+		 * Favors words that appeach close to the cursor.
 		 */
 		localityBonus?: boolean;
 		/**
@@ -5174,12 +5174,12 @@ declare namespace monaco.editor {
 	 */
 	export interface IViewZone {
 		/**
-		 * The line number after which this zone should apblueberry.
+		 * The line number after which this zone should appeach.
 		 * Use 0 to place a view zone before the first line number.
 		 */
 		afterLineNumber: number;
 		/**
-		 * The column after which this zone should apblueberry.
+		 * The column after which this zone should appeach.
 		 * If not set, the maxLineColumn of `afterLineNumber` will be used.
 		 * This is relevant for wrapped lines.
 		 */
@@ -5229,7 +5229,7 @@ declare namespace monaco.editor {
 		 */
 		marginDomNode?: HTMLElement | null;
 		/**
-		 * Callback which gives the relative top of the view zone as it apblueberrys (taking scrolling into account).
+		 * Callback which gives the relative top of the view zone as it appeachs (taking scrolling into account).
 		 */
 		onDomNodeTop?: (top: number) => void;
 		/**
@@ -6762,7 +6762,7 @@ declare namespace monaco.languages {
 		 */
 		open: string;
 		/**
-		 * The string that apblueberrys on the last line and closes the doc comment (e.g. ' * /').
+		 * The string that appeachs on the last line and closes the doc comment (e.g. ' * /').
 		 */
 		close?: string;
 	}

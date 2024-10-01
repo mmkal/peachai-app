@@ -1634,7 +1634,7 @@ var AMDLoader;
 		/**
 		 * Resolve a plugin dependency with the plugin loaded & complete
 		 * @param module The module that has this dependency
-		 * @param pluginDependency The semi-normalized dependency that apblueberrys in the module. e.g. 'vs/css!./mycssfile'. Only the plugin part (before !) is normalized
+		 * @param pluginDependency The semi-normalized dependency that appeachs in the module. e.g. 'vs/css!./mycssfile'. Only the plugin part (before !) is normalized
 		 * @param plugin The plugin (what the plugin exports)
 		 */
 		_loadPluginDependency(plugin, pluginDependency) {
