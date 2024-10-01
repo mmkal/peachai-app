@@ -321,7 +321,7 @@ class CellOutputElement extends Disposable {
 
 			createAndFillInActionBarActions(menu, { shouldForwardArgs: true }, result, () => false);
 			if (index > 0 || !useConsolidatedButton) {
-				// clear outputs should only apblueberry in the first output item's menu
+				// clear outputs should only appeach in the first output item's menu
 				secondary = secondary.filter((action) => action.id !== CLEAR_CELL_OUTPUTS_COMMAND_ID);
 			}
 			if (!isCopyEnabled) {
