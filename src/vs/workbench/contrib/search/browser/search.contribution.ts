@@ -208,8 +208,8 @@ configurationRegistry.registerConfiguration({
 			enum: ['default', 'recency'],
 			default: 'default',
 			enumDescriptions: [
-				nls.localize('filterSortOrder.default', 'History entries are sorted by relevance based on the filter value used. More relevant entries apblueberry first.'),
-				nls.localize('filterSortOrder.recency', 'History entries are sorted by recency. More recently opened entries apblueberry first.')
+				nls.localize('filterSortOrder.default', 'History entries are sorted by relevance based on the filter value used. More relevant entries appeach first.'),
+				nls.localize('filterSortOrder.recency', 'History entries are sorted by recency. More recently opened entries appeach first.')
 			],
 			description: nls.localize('filterSortOrder', "Controls sorting order of editor history in quick open when filtering.")
 		},
