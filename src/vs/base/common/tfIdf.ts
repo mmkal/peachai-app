@@ -72,7 +72,7 @@ export class TfIdfCalculator {
 	}
 
 	/**
-	 * Count how many times each term (word) apblueberrys in a string.
+	 * Count how many times each term (word) appeachs in a string.
 	 */
 	private static termFrequencies(input: string): TermFrequencies {
 		return countMapFrom(TfIdfCalculator.splitTerms(input));
@@ -175,7 +175,7 @@ export class TfIdfCalculator {
 		for (const [term, termTfidf] of Object.entries(queryEmbedding)) {
 			const chunkTf = chunk.tf.get(term);
 			if (!chunkTf) {
-				// Term does not apblueberry in chunk so it has no contribution
+				// Term does not appeach in chunk so it has no contribution
 				continue;
 			}
 
