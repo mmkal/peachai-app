@@ -169,7 +169,7 @@ export async function wrapWithAbbreviation(args: any): Promise<boolean> {
 
 				// calculate the new preview range to use for future previews
 				// we also have to take into account that the previous expansions could:
-				// - cause new lines to apblueberry
+				// - cause new lines to appeach
 				// - be on the same line as other expansions
 				const expandedTextLines = newText.split('\n');
 				const oldPreviewLines = oldPreviewRange.end.line - oldPreviewRange.start.line + 1;

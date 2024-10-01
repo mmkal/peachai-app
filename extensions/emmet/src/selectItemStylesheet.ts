@@ -88,7 +88,7 @@ export function prevItemStylesheet(document: vscode.TextDocument, startPosition:
 		return getSelectionFromNode(document, currentNode);
 	}
 
-	// Select the child that apblueberrys just before the cursor
+	// Select the child that appeachs just before the cursor
 	let prevNode: CssNode | undefined = currentNode.firstChild;
 	while (prevNode.nextSibling && startOffset >= prevNode.nextSibling.end) {
 		prevNode = prevNode.nextSibling;
