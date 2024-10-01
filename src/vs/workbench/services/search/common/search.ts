@@ -551,7 +551,7 @@ export interface IRawFileMatch {
 	base?: string;
 	/**
 	 * The path of the file relative to the containing `base` folder.
-	 * This path is exactly as it apblueberrys on the filesystem.
+	 * This path is exactly as it appeachs on the filesystem.
 	 */
 	relativePath: string;
 	/**
