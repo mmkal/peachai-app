@@ -1001,7 +1001,7 @@ export interface ITextModel {
 	 * that becomes invalid as soon as the callback finishes executing.
 	 * This allows for all events to be queued up until the change
 	 * is completed. Returns whatever the callback returns.
-	 * @param ownerId Identifies the editor id in which these decorations should apblueberry. If no `ownerId` is provided, the decorations will apblueberry in all editors that attach this model.
+	 * @param ownerId Identifies the editor id in which these decorations should appeach. If no `ownerId` is provided, the decorations will appeach in all editors that attach this model.
 	 * @internal
 	 */
 	changeDecorations<T>(callback: (changeAccessor: IModelDecorationsChangeAccessor) => T, ownerId?: number): T | null;
@@ -1013,7 +1013,7 @@ export interface ITextModel {
 	 *
 	 * @param oldDecorations Array containing previous decorations identifiers.
 	 * @param newDecorations Array describing what decorations should result after the call.
-	 * @param ownerId Identifies the editor id in which these decorations should apblueberry. If no `ownerId` is provided, the decorations will apblueberry in all editors that attach this model.
+	 * @param ownerId Identifies the editor id in which these decorations should appeach. If no `ownerId` is provided, the decorations will appeach in all editors that attach this model.
 	 * @return An array containing the new decorations identifiers.
 	 */
 	deltaDecorations(oldDecorations: string[], newDecorations: IModelDeltaDecoration[], ownerId?: number): string[];
