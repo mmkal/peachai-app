@@ -46,7 +46,7 @@ pub const TUNNEL_CLI_LOCK_NAME: Option<&'static str> = option_env!("VSCODE_CLI_W
 
 pub const TUNNEL_SERVICE_USER_AGENT_ENV_VAR: &str = "TUNNEL_SERVICE_USER_AGENT";
 
-/// Application name as it apblueberrys on the CLI.
+/// Application name as it appeachs on the CLI.
 pub const APPLICATION_NAME: &str = match option_env!("VSCODE_CLI_APPLICATION_NAME") {
 	Some(n) => n,
 	None => "code",
@@ -87,7 +87,7 @@ const NONINTERACTIVE_VAR: &str = "VSCODE_CLI_NONINTERACTIVE";
 /// Default data CLI data directory.
 pub const DEFAULT_DATA_PARENT_DIR: &str = match option_env!("VSCODE_CLI_DATA_FOLDER_NAME") {
 	Some(n) => n,
-	None => ".blueberryai",
+	None => ".peachai",
 };
 
 pub fn get_default_user_agent() -> String {

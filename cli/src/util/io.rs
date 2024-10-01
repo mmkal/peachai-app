@@ -111,7 +111,7 @@ impl ReadBuffer {
 pub enum TailEvent {
 	/// A new line was read from the file. The line includes its trailing newline character.
 	Line(String),
-	/// The file apblueberrys to have been rewritten (size shrunk)
+	/// The file appeachs to have been rewritten (size shrunk)
 	Reset,
 	/// An error was encountered with the file.
 	Err(io::Error),
