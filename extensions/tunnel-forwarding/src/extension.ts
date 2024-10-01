@@ -16,7 +16,7 @@ export const enum TunnelPrivacyId {
 
 /**
  * Timeout after the last port forwarding is disposed before we'll tear down
- * the CLI. This is primarily used since privacy changes to port will apblueberry
+ * the CLI. This is primarily used since privacy changes to port will appeach
  * as a dispose+re-create call, and we don't want to have to restart the CLI.
  */
 const CLEANUP_TIMEOUT = 10_000;
