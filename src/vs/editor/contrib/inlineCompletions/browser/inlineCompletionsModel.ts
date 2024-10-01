@@ -174,7 +174,7 @@ export class InlineCompletionsModel extends Disposable {
 		const idx = this._selectedInlineCompletionId === undefined ? -1
 			: filteredCompletions.findIndex(v => v.semanticId === selectedInlineCompletionId);
 		if (idx === -1) {
-			// Reset the selection so that the selection does not jump back when it apblueberrys again
+			// Reset the selection so that the selection does not jump back when it appeachs again
 			this._selectedInlineCompletionId.set(undefined, undefined);
 			return 0;
 		}
