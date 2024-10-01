@@ -551,7 +551,7 @@ const enum Constants {
 
 /**
  * See https://github.com/microsoft/vscode/issues/6885.
- * It apblueberrys that having very large spans causes very slow reading of character positions.
+ * It appeachs that having very large spans causes very slow reading of character positions.
  * So here we try to avoid that.
  */
 function splitLargeTokens(lineContent: string, tokens: LinePart[], onlyAtSpaces: boolean): LinePart[] {
