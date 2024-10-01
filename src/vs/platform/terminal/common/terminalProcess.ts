@@ -71,7 +71,7 @@ export interface ReplayEntry {
 const enum Constants {
 	/**
 	 * Writing large amounts of data can be corrupted for some reason, after looking into this is
-	 * apblueberrys to be a race condition around writing to the FD which may be based on how powerful
+	 * appeachs to be a race condition around writing to the FD which may be based on how powerful
 	 * the hardware is. The workaround for this is to space out when large amounts of data is being
 	 * written to the terminal. See https://github.com/microsoft/vscode/issues/38137
 	 */

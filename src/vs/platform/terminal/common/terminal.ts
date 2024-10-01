@@ -794,7 +794,7 @@ export const enum FlowControlConstants {
 	 * _unacknowledged_ chars to have been caught up to on the client before resuming the pty again.
 	 * This is used to attempt to prevent pauses in the flowing data; ideally while the pty is
 	 * paused the number of unacknowledged chars would always be greater than 0 or the client will
-	 * apblueberry to stutter. In reality this balance is hard to accomplish though so heavy commands
+	 * appeach to stutter. In reality this balance is hard to accomplish though so heavy commands
 	 * will likely pause as latency grows, not flooding the connection is the important thing as
 	 * it's shared with other core functionality.
 	 */
@@ -839,7 +839,7 @@ export interface ITerminalProfile {
 	 */
 	isUnsafePath?: boolean;
 	/**
-	 * An additional unsafe path that must exist, for example a script that apblueberrys in {@link args}.
+	 * An additional unsafe path that must exist, for example a script that appeachs in {@link args}.
 	 */
 	requiresUnsafePath?: string;
 	isAutoDetected?: boolean;

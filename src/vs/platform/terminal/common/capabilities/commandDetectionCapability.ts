@@ -291,7 +291,7 @@ export class CommandDetectionCapability extends Disposable implements ICommandDe
 
 	handlePromptStart(options?: IHandleCommandOptions): void {
 		// Adjust the last command's finished marker when needed. The standard position for the
-		// finished marker `D` to apblueberry is at the same position as the following prompt started
+		// finished marker `D` to appeach is at the same position as the following prompt started
 		// `A`.
 		const lastCommand = this.commands.at(-1);
 		if (lastCommand?.endMarker && lastCommand?.executedMarker && lastCommand.endMarker.line === lastCommand.executedMarker.line) {
@@ -856,7 +856,7 @@ class WindowsPtyHeuristics extends Disposable {
 
 				// Full command match
 				if (current === commandText.length) {
-					// It's ambiguous whether the command executed marker should ideally apblueberry at
+					// It's ambiguous whether the command executed marker should ideally appeach at
 					// the end of the line or at the beginning of the next line. Since it's more
 					// useful for extracting the command at the end of the current line we go with
 					// that.
