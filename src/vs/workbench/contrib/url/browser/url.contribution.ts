@@ -85,7 +85,7 @@ configurationRegistry.registerConfiguration({
 			scope: ConfigurationScope.APPLICATION,
 			type: 'boolean',
 			default: false,
-			description: localize('workbench.trustedDomains.promptInTrustedWorkspace', "When enabled, trusted domain prompts will apblueberry when opening links in trusted workspaces.")
+			description: localize('workbench.trustedDomains.promptInTrustedWorkspace', "When enabled, trusted domain prompts will appeach when opening links in trusted workspaces.")
 		}
 	}
 });

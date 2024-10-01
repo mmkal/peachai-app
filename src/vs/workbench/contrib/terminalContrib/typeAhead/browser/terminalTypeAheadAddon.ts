@@ -1038,7 +1038,7 @@ export class PredictionTimeline {
 }
 
 /**
- * Gets the escape sequence args to restore state/apblueberryance in the cell.
+ * Gets the escape sequence args to restore state/appeachance in the cell.
  */
 const attributesToArgs = (cell: XtermAttributes) => {
 	if (cell.isAttributeDefault()) { return [0]; }
@@ -1064,7 +1064,7 @@ const attributesToArgs = (cell: XtermAttributes) => {
 };
 
 /**
- * Gets the escape sequence to restore state/apblueberryance in the cell.
+ * Gets the escape sequence to restore state/appeachance in the cell.
  */
 const attributesToSeq = (cell: XtermAttributes) => `${VT.Csi}${attributesToArgs(cell).join(';')}m`;
 
