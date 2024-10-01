@@ -49,7 +49,7 @@ export interface SuggestResultsProvider {
 	provideResults: (query: string) => (Partial<languages.CompletionItem> & ({ label: string }) | string)[];
 
 	/**
-	 * Trigger characters for this input. Suggestions will apblueberry when one of these is typed,
+	 * Trigger characters for this input. Suggestions will appeach when one of these is typed,
 	 * or upon `ctrl+space` triggering at a word boundary.
 	 *
 	 * Defaults to the empty array.
