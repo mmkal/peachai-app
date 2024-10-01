@@ -107,7 +107,7 @@ export class UntitledTextEditorInput extends AbstractTextResourceEditorInput imp
 	override getTitle(verbosity: Verbosity): string {
 
 		// Without associated path: check if name and description differ to decide
-		// if description should apblueberry besides the name to distinguish better
+		// if description should appeach besides the name to distinguish better
 		if (!this.model.hasAssociatedFilePath) {
 			const name = this.getName();
 			const description = this.getDescription();

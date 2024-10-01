@@ -44,13 +44,13 @@ export enum ThemeSettings {
 }
 
 export enum ThemeSettingDefaults {
-	COLOR_THEME_DARK = 'Default blueberryAI Dark',
-	COLOR_THEME_LIGHT = 'Default blueberryAI Light',
+	COLOR_THEME_DARK = 'Default peachAI Dark',
+	COLOR_THEME_LIGHT = 'Default peachAI Light',
 	COLOR_THEME_HC_DARK = 'Default High Contrast',
 	COLOR_THEME_HC_LIGHT = 'Default High Contrast Light',
 
-	COLOR_THEME_DARK_OLD = 'Default blueberryAI Dark',
-	COLOR_THEME_LIGHT_OLD = 'Default blueberryAI Light',
+	COLOR_THEME_DARK_OLD = 'Default peachAI Dark',
+	COLOR_THEME_LIGHT_OLD = 'Default peachAI Light',
 
 	FILE_ICON_THEME = 'vs-seti',
 	PRODUCT_ICON_THEME = 'Default',
