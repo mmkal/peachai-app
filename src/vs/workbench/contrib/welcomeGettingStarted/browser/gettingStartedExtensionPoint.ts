@@ -37,7 +37,7 @@ export const walkthroughsExtensionPoint = ExtensionsRegistry.registerExtensionPo
 				},
 				featuredFor: {
 					type: 'array',
-					description: localize('walkthroughs.featuredFor', "Walkthroughs that match one of these glob patterns apblueberry as 'featured' in workspaces with the specified files. For example, a walkthrough for TypeScript projects might specify `tsconfig.json` here."),
+					description: localize('walkthroughs.featuredFor', "Walkthroughs that match one of these glob patterns appeach as 'featured' in workspaces with the specified files. For example, a walkthrough for TypeScript projects might specify `tsconfig.json` here."),
 					items: {
 						type: 'string'
 					},

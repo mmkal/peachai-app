@@ -10,7 +10,7 @@ import { Codicon } from 'vs/base/common/codicons';
 import { ThemeIcon } from 'vs/base/common/themables';
 import { registerIcon } from 'vs/platform/theme/common/iconRegistry';
 
-// Todo: Replace this with blueberryAI logo (https://github.com/tryblueberry/blueberryai-app/issues/235)
+// Todo: Replace this with peachAI logo (https://github.com/trypeach/peachai-app/issues/235)
 const setupIcon = registerIcon('getting-started-setup', Codicon.zap, localize('getting-started-setup-icon', "Icon used for the setup category of welcome page"));
 
 export type BuiltinGettingStartedStep = {
@@ -167,8 +167,8 @@ const Button = (title: string, href: string) => `[${title}](${href})`;
 export const walkthroughs: GettingStartedWalkthroughContent = [
 	{
 		id: 'Setup',
-		title: localize('gettingStarted.setup.title', "Get Started With blueberryAI"),
-		description: localize('gettingStarted.setup.description', "Welcome to blueberryAI, your AI code editor! Let's personalize your editor and get you familiar with the AI tools."),
+		title: localize('gettingStarted.setup.title', "Get Started With peachAI"),
+		description: localize('gettingStarted.setup.description', "Welcome to peachAI, your AI code editor! Let's personalize your editor and get you familiar with the AI tools."),
 		isFeatured: true,
 		icon: setupIcon,
 		when: '!isWeb',
@@ -189,7 +189,7 @@ export const walkthroughs: GettingStartedWalkthroughContent = [
 				{
 					id: 'talk',
 					title: 'Talk To Your Codebase Directly',
-					description: 'Type in the chat box (CMD+L, CTRL+L on Windows) to ask questions about your code. blueberryAI uses Retrival Augmented Generation to add context to your prompts, but you can also directly reference code by including other files in the chat by adding  @filename. This also works for folders, docs, terminal content, codebase, and more!',
+					description: 'Type in the chat box (CMD+L, CTRL+L on Windows) to ask questions about your code. peachAI uses Retrival Augmented Generation to add context to your prompts, but you can also directly reference code by including other files in the chat by adding  @filename. This also works for folders, docs, terminal content, codebase, and more!',
 					media: {
 						type: 'image',
 						path: 'talkToCode.png',
