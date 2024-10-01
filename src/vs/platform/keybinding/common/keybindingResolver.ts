@@ -92,9 +92,9 @@ export class KeybindingResolver {
 		if (!item.isDefault) {
 			return 3; // User keybindings (highest priority)
 		}
-		if (item.extensionId === 'blueberryai.blueberryai') {
+		if (item.extensionId === 'peachai.peachai') {
 			// todo: remove id hardcode and extract extension id from env or settings
-			return 2; // blueberry AI keybindings
+			return 2; // peach AI keybindings
 		}
 		return 1; // Other extensions' keybindings
 	}
@@ -177,8 +177,8 @@ export class KeybindingResolver {
 		}
 		// Sort the result array based on priority before returning
     	return result.sort((a, b) => {
-			const priorityA = a.isDefault ? (a.extensionId === 'blueberryai.blueberryai' ? 2 : 1) : 3;
-			const priorityB = b.isDefault ? (b.extensionId === 'blueberryai.blueberryai' ? 2 : 1) : 3;
+			const priorityA = a.isDefault ? (a.extensionId === 'peachai.peachai' ? 2 : 1) : 3;
+			const priorityB = b.isDefault ? (b.extensionId === 'peachai.peachai' ? 2 : 1) : 3;
 			return priorityA - priorityB;
 		});
 	}

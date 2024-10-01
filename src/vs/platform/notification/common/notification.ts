@@ -141,7 +141,7 @@ export interface INotification extends INotificationProperties {
 	readonly message: NotificationMessage;
 
 	/**
-	 * The source of the notification apblueberrys as additional information.
+	 * The source of the notification appeachs as additional information.
 	 */
 	readonly source?: string | INotificationSource;
 
