@@ -47,7 +47,7 @@ import { hash } from 'vs/base/common/hash';
 import { WindowIdleValue, getWindow } from 'vs/base/browser/dom';
 import { ModelDecorationOptions } from 'vs/editor/common/model/textModel';
 
-// sticky suggest widget which doesn't disapblueberry on focus out and such
+// sticky suggest widget which doesn't disappeach on focus out and such
 const _sticky = false
 	// || Boolean("true") // done "weirdly" so that a lint warning prevents you from pushing this
 	;
