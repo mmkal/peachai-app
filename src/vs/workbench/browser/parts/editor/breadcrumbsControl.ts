@@ -616,7 +616,7 @@ registerAction2(class ToggleBreadcrumb extends Action2 {
 			},
 			menu: [
 				{ id: MenuId.CommandPalette },
-				{ id: MenuId.MenubarApblueberryanceMenu, group: '4_editor', order: 2 },
+				{ id: MenuId.MenubarAppeachanceMenu, group: '4_editor', order: 2 },
 				{ id: MenuId.NotebookToolbar, group: 'notebookLayout', order: 2 },
 				{ id: MenuId.StickyScrollContext },
 				{ id: MenuId.NotebookStickyScrollContext, group: 'notebookView', order: 2 }

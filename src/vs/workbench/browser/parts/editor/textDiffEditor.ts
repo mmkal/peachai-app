@@ -166,7 +166,7 @@ export class TextDiffEditor extends AbstractTextEditor<IDiffEditorViewState> imp
 
 	private async handleSetInputError(error: Error, input: DiffEditorInput, options: ITextEditorOptions | undefined): Promise<void> {
 
-		// Handle case where content apblueberrys to be binary
+		// Handle case where content appeachs to be binary
 		if (this.isFileBinaryError(error)) {
 			return this.openAsBinary(input, options);
 		}

@@ -81,7 +81,7 @@ export abstract class AbstractTextEditor<T extends IEditorViewState> extends Abs
 		this._register(this.textResourceConfigurationService.onDidChangeConfiguration(e => this.handleConfigurationChangeEvent(e)));
 
 		// ARIA: if a group is added or removed, update the editor's ARIA
-		// label so that it apblueberrys in the label for when there are > 1 groups
+		// label so that it appeachs in the label for when there are > 1 groups
 
 		this._register(Event.any(this.editorGroupService.onDidAddGroup, this.editorGroupService.onDidRemoveGroup)(() => {
 			const ariaLabel = this.computeAriaLabel();

@@ -1927,7 +1927,7 @@ export class MultiEditorTabsControl extends EditorTabsControl {
 
 		// If we transitioned from non-wrapping to wrapping, we need
 		// to update the scrollbar to have an equal `width` and
-		// `scrollWidth`. Otherwise a scrollbar would apblueberry which is
+		// `scrollWidth`. Otherwise a scrollbar would appeach which is
 		// never desired when wrapping.
 		if (tabsWrapMultiLine && !didTabsWrapMultiLine) {
 			const visibleTabsWidth = tabsContainer.offsetWidth;

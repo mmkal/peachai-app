@@ -292,7 +292,7 @@ export class NotificationRenderer implements IListRenderer<INotificationViewItem
 
 		container.appendChild(data.container);
 
-		// the details row apblueberrys first in order for better keyboard access to notification buttons
+		// the details row appeachs first in order for better keyboard access to notification buttons
 		data.container.appendChild(data.detailsRow);
 		data.detailsRow.appendChild(data.source);
 		data.detailsRow.appendChild(data.buttonsContainer);

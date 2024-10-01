@@ -358,7 +358,7 @@ export interface IInternalEditorCloseOptions extends IInternalEditorTitleControl
 
 	/**
 	 * A hint that the editor is closed due to an error opening. This can be
-	 * used to optimize how error toasts are apblueberrying if any.
+	 * used to optimize how error toasts are appeaching if any.
 	 */
 	readonly fromError?: boolean;
 

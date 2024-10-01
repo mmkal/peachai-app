@@ -26,9 +26,9 @@ interface WatermarkEntry {
 	readonly when?: ContextKeyExpression;
 }
 
-const openblueberryAIChat: WatermarkEntry = { text: localize('watermark.openblueberryAIChat', "Open Chat"), id: 'blueberryai.focusContinueInput', when: ContextKeyExpr.has('blueberryAIExtensionLoaded') };
-const bigChat: WatermarkEntry = { text: localize('watermark.blueberryAIBigChat', "Big Chat"), id: 'blueberryai.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('blueberryAIExtensionLoaded') };
-const prevChat: WatermarkEntry = { text: localize('watermark.blueberryAIPrevChat', "Previous Chat"), id: 'blueberryai.loadRecentChat', when: ContextKeyExpr.has('blueberryAIExtensionLoaded') };
+const openpeachAIChat: WatermarkEntry = { text: localize('watermark.openpeachAIChat', "Open Chat"), id: 'peachai.focusContinueInput', when: ContextKeyExpr.has('peachAIExtensionLoaded') };
+const bigChat: WatermarkEntry = { text: localize('watermark.peachAIBigChat', "Big Chat"), id: 'peachai.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('peachAIExtensionLoaded') };
+const prevChat: WatermarkEntry = { text: localize('watermark.peachAIPrevChat', "Previous Chat"), id: 'peachai.loadRecentChat', when: ContextKeyExpr.has('peachAIExtensionLoaded') };
 const showCommands: WatermarkEntry = { text: localize('watermark.showCommands', "Show All Commands"), id: 'workbench.action.showCommands' };
 const quickAccess: WatermarkEntry = { text: localize('watermark.quickAccess', "Go to File"), id: 'workbench.action.quickOpen' };
 const openFileNonMacOnly: WatermarkEntry = { text: localize('watermark.openFile', "Open File"), id: 'workbench.action.files.openFile', mac: false };
@@ -43,7 +43,7 @@ const toggleFullscreen: WatermarkEntry = { text: localize({ key: 'watermark.togg
 const showSettings: WatermarkEntry = { text: localize('watermark.showSettings', "Show Settings"), id: 'workbench.action.openSettings' };
 
 const noFolderEntries = [
-	openblueberryAIChat,
+	openpeachAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -55,7 +55,7 @@ const noFolderEntries = [
 ];
 
 const folderEntries = [
-	openblueberryAIChat,
+	openpeachAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -128,7 +128,7 @@ export class EditorGroupWatermark extends Disposable {
 		// Wait for the all extensions to be activated
 		await this.extensionService.activateByEvent('onStartupFinished');
 		// TODO: @Himanshu-Singh-Chauhan - this should be set from inside the extension, test it later, if it works, remove this
-		this.contextKeyService.createKey('blueberryAIExtensionLoaded', true); // Set a context key when the blueberryAI extension is loaded
+		this.contextKeyService.createKey('peachAIExtensionLoaded', true); // Set a context key when the peachAI extension is loaded
 
 		const enabled = this.configurationService.getValue<boolean>('workbench.tips.enabled');
 
