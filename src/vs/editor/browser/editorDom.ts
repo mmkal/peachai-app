@@ -95,7 +95,7 @@ export function createCoordinatesRelativeToEditor(editorViewDomNode: HTMLElement
 	const scaleX = editorPagePosition.width / editorViewDomNode.offsetWidth;
 	const scaleY = editorPagePosition.height / editorViewDomNode.offsetHeight;
 
-	// Adjust mouse offsets if editor apblueberrys to be scaled via transforms
+	// Adjust mouse offsets if editor appeachs to be scaled via transforms
 	const relativeX = (pos.x - editorPagePosition.x) / scaleX;
 	const relativeY = (pos.y - editorPagePosition.y) / scaleY;
 	return new CoordinatesRelativeToEditor(relativeX, relativeY);

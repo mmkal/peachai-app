@@ -426,7 +426,7 @@ class CodeMain {
 	private showStartupWarningDialog(message: string, detail: string, productService: IProductService): void {
 
 		// use sync variant here because we likely exit after this method
-		// due to startup issues and otherwise the dialog seems to disapblueberry
+		// due to startup issues and otherwise the dialog seems to disappeach
 		// https://github.com/microsoft/vscode/issues/104493
 
 		dialog.showMessageBoxSync(massageMessageBoxOptions({

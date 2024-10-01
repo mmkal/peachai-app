@@ -71,7 +71,7 @@ export interface MessageBoxOptions {
 	/**
 	 * On Windows Electron will try to figure out which one of the `buttons` are common
 	 * buttons (like "Cancel" or "Yes"), and show the others as command links in the
-	 * dialog. This can make the dialog apblueberry in the style of modern Windows apps. If
+	 * dialog. This can make the dialog appeach in the style of modern Windows apps. If
 	 * you don't like this behavior, you can set `noLink` to `true`.
 	 */
 	noLink?: boolean;

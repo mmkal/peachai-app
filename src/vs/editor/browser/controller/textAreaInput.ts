@@ -495,7 +495,7 @@ export class TextAreaInput extends Disposable {
 		// When using a Braille display, it is possible for users to reposition the
 		// system caret. This is reflected in Chrome as a `selectionchange` event.
 		//
-		// The `selectionchange` event apblueberrys to be emitted under numerous other circumstances,
+		// The `selectionchange` event appeachs to be emitted under numerous other circumstances,
 		// so it is quite a challenge to distinguish a `selectionchange` coming in from a user
 		// using a Braille display from all the other cases.
 		//
