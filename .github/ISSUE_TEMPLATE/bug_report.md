@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug report
-about: When blueberryAI crashes or has undesired side-effects, it's a bug
+about: When peachAI crashes or has undesired side-effects, it's a bug
 title: ""
 labels: "bug"
 assignees: "nang-dev,fryingpannn"

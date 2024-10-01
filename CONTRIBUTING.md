@@ -1,7 +1,7 @@
-# 🎉 Contributing to blueberryAI
+# 🎉 Contributing to peachAI
 
 ## Table of Contents
-- [🎉 Contributing to blueberryAI](#-contributing-to-blueberryai)
+- [🎉 Contributing to peachAI](#-contributing-to-peachai)
 - [🚀 Getting Started](#-getting-started)
 - [🛠 Prerequisites](#-prerequisites)
 - [🌟 Contributing Workflow](#-contributing-workflow)
@@ -12,11 +12,11 @@
 - [🐛 Creating Issues](#-creating-issues)
 - [⚙️ Packaging](#-packaging)
 
-Welcome to the blueberryAI app! blueberryAI is a fork of VSCode (and Continue), with most of the functionality in `extension/blueberryai-submodule`. Follow the guide below to contribute effectively and have fun while doing it! 😄
+Welcome to the peachAI app! peachAI is a fork of VSCode (and Continue), with most of the functionality in `extension/peachai-submodule`. Follow the guide below to contribute effectively and have fun while doing it! 😄
 
 ## 🚀 Getting Started
 
-After cloning and building the repo, check out our [issues list](https://github.com/tryblueberry/blueberryai-app/issues). For first-time contributors, issues labeled [`good first issue`](https://github.com/tryblueberry/blueberryai-app/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+First+Issue%22) are great starting points. If you're contributing significant changes, or if the issue is already assigned to a specific milestone, please discuss with the assignee first on [Discord](https://discord.gg/7QMraJUsQt).
+After cloning and building the repo, check out our [issues list](https://github.com/trypeach/peachai-app/issues). For first-time contributors, issues labeled [`good first issue`](https://github.com/trypeach/peachai-app/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+First+Issue%22) are great starting points. If you're contributing significant changes, or if the issue is already assigned to a specific milestone, please discuss with the assignee first on [Discord](https://discord.gg/7QMraJUsQt).
 
 ## 🛠 Prerequisites
 
@@ -36,12 +36,12 @@ Ensure you have the following tools installed:
 
 ### 1️⃣ Fork and Clone
 
-1. Go to the [blueberryai-app repository](https://github.com/tryblueberry/blueberryai-app.git).
+1. Go to the [peachai-app repository](https://github.com/trypeach/peachai-app.git).
 2. Click on the "Fork" button at the top right of the page to create a copy of the repository under your own GitHub account.
 3. Once forked, clone the repository to your local machine using the following command in your terminal:
 
    ```bash
-   git clone https://github.com/<your-username>/blueberryai-app.git
+   git clone https://github.com/<your-username>/peachai-app.git
    ```
 
 ### 2️⃣ Setup Environment
@@ -50,18 +50,18 @@ First time setup:
 
 - **macOS and Linux**:
   ```bash
-  ./scripts/blueberryai/setup-environment.sh
+  ./scripts/peachai/setup-environment.sh
   ```
 - **Windows**:
   ```bat
-  .\scripts\blueberryai/setup-environment.ps1
+  .\scripts\peachai/setup-environment.ps1
   ```
 
 To rebuild the app after initial setup:
 
 - **macOS and Linux**:
   ```bash
-  ./scripts/blueberryai/install-dependencies.sh
+  ./scripts/peachai/install-dependencies.sh
   ```
 - **Windows**:
   ```bat
@@ -70,30 +70,30 @@ To rebuild the app after initial setup:
 
 ### 3️⃣ Run the App
 
-#### blueberryAI is split into two parts. blueberryai-app and blueberryai-submodule.
+#### peachAI is split into two parts. peachai-app and peachai-submodule.
 
-- [blueberryai-app](https://github.com/tryblueberry/blueberryai-app/): VSCode fork and parent repository for blueberryAI. Most contributions will NOT end up here.
+- [peachai-app](https://github.com/trypeach/peachai-app/): VSCode fork and parent repository for peachAI. Most contributions will NOT end up here.
 
-- [./extensions/blueberryai-submodule](https://github.com/tryblueberry/blueberryai-submodule): Nearly all of blueberryAI's functionality, packaged as a built-in VSCode/blueberryAI extension. It is a fork of Continue, and is a git submodule of blueberryai-app. Most contributions will end up here!
+- [./extensions/peachai-submodule](https://github.com/trypeach/peachai-submodule): Nearly all of peachAI's functionality, packaged as a built-in VSCode/peachAI extension. It is a fork of Continue, and is a git submodule of peachai-app. Most contributions will end up here!
 
 
-#### A) blueberryAI Submodule / Extension
+#### A) peachAI Submodule / Extension
 
-1. Open the directory `extensions/blueberryai-submodule` in blueberryAI or VSCode.
+1. Open the directory `extensions/peachai-submodule` in peachAI or VSCode.
 2. Make edits.
-3. In VSCode/blueberryAI, open the command palette (`cmd/ctrl+shift+p`) and select `Tasks: Run Task` and then select `install-and-build`.
+3. In VSCode/peachAI, open the command palette (`cmd/ctrl+shift+p`) and select `Tasks: Run Task` and then select `install-and-build`.
 4. Start debugging:
    - Switch to Run and Debug view.
    - Select `Extension (VS Code)` from the drop-down.
    - Hit the play button.
-   - This will start the extension in debug mode and open a new VSCode/blueberryAI window with the submodule installed (with your local changes).
+   - This will start the extension in debug mode and open a new VSCode/peachAI window with the submodule installed (with your local changes).
 
-#### B) blueberryAI App
+#### B) peachAI App
 
 1. Run `yarn watch` in a terminal - wait for it to compile everything (around 2 mins), it then shows "finished compiling", keep it running.
 2. For watching extension - open another terminal and run:
    ```bash
-   cd extensions/blueberryai-submodule/extensions/vscode
+   cd extensions/peachai-submodule/extensions/vscode
    yarn tsc-watch
    ```
 3. Open another terminal to run the app:
@@ -117,7 +117,7 @@ To rebuild the app after initial setup:
 
 ## 💻 Automated Testing
 
-Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `blueberryai-app` folder (`scripts	est` on Windows).
+Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `peachai-app` folder (`scripts	est` on Windows).
 
 We also have automated UI tests. The [smoke test README](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) has all the details.
 
@@ -129,60 +129,60 @@ To lint the source as you make changes you can install the [eslint extension](ht
 
 ## 🌿 Work Branches
 
-Even if you have push rights on the `tryblueberry/blueberryai-app` repository, you should create a personal fork and create feature branches (`yourname/branch-name`, e.g. `pan/open-chat-shortcut`) there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
+Even if you have push rights on the `trypeach/peachai-app` repository, you should create a personal fork and create feature branches (`yourname/branch-name`, e.g. `pan/open-chat-shortcut`) there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
 
 ## 📜 Pull Requests
 
-Before we can accept a pull request from you, you'll need to sign a [Contributor License Agreement (CLA)](https://github.com/tryblueberry/blueberryai-app/blob/main/CONTRIBUTING.md#contributor-license-agreement). It is an automated process and you only need to do it once.
+Before we can accept a pull request from you, you'll need to sign a [Contributor License Agreement (CLA)](https://github.com/trypeach/peachai-app/blob/main/CONTRIBUTING.md#contributor-license-agreement). It is an automated process and you only need to do it once.
 
-To enable us to quickly review and accept your pull requests, always create one pull request per issue and [link the issue in the pull request](https://github.com/blog/957-introducing-issue-mentions). Never merge multiple requests in one unless they have the same root cause. Be sure to follow our [Coding Guidelines](https://github.com/tryblueberry/blueberryai-app/blob/main/CONTRIBUTING.md#coding-guidelines) and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified...
+To enable us to quickly review and accept your pull requests, always create one pull request per issue and [link the issue in the pull request](https://github.com/blog/957-introducing-issue-mentions). Never merge multiple requests in one unless they have the same root cause. Be sure to follow our [Coding Guidelines](https://github.com/trypeach/peachai-app/blob/main/CONTRIBUTING.md#coding-guidelines) and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified...
 
 ## 🐛 Creating Issues
 
-Before you submit an issue, please do a search in [open issues](https://github.com/tryblueberry/blueberryai/issues) to see if the issue or feature request has already been filed.
+Before you submit an issue, please do a search in [open issues](https://github.com/trypeach/peachai/issues) to see if the issue or feature request has already been filed.
 Use the provided issue template when creating a new issue. Fill in the template with as much detail as possible. The more detail you provide, the more likely that someone can help you.
-Alternatively, you can use blueberry to create a ticket for the problem first. Simply describe the issue or feature request, and blueberry will create a ticket for it. This can help you understand the problem better and guide you in manually solving it.
+Alternatively, you can use peach to create a ticket for the problem first. Simply describe the issue or feature request, and peach will create a ticket for it. This can help you understand the problem better and guide you in manually solving it.
 You can also directly ping the maintainers or admins in the [Discord](https://discord.gg/7QMraJUsQt).
 
 ## ⚙️ Packaging
 
 This section outlines how to package the app for a new release/distribution. This process is a bit manual currently.
 
-### Step 1: Package blueberryAI App
+### Step 1: Package peachAI App
 
-blueberryAI can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`.
+peachAI can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`.
 
 These `gulp` tasks are available:
 
 - `vscode-[platform]`: Builds a packaged version for `[platform]`.
 - `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
-1. If you have not already, run `./scripts/blueberryai/setup-environment.[sh,ps1]`.
-2. If already ran that upon your first install, run `./scripts/blueberryai/install-dependencies.[sh,ps1]`.
+1. If you have not already, run `./scripts/peachai/setup-environment.[sh,ps1]`.
+2. If already ran that upon your first install, run `./scripts/peachai/install-dependencies.[sh,ps1]`.
 3. Run `yarn gulp vscode-[platform]`. For example `yarn gulp vscode-linux-x64`.
 
-This will generate the new blueberryAI app and takes around 1 hour.
+This will generate the new peachAI app and takes around 1 hour.
 
-### Step 2: Package blueberryAI Extension
+### Step 2: Package peachAI Extension
 
-`blueberryai-submodule` also needs to be packaged and integrated into the overall blueberryAI app.
+`peachai-submodule` also needs to be packaged and integrated into the overall peachAI app.
 
-1. `cd` into `extensions/blueberryai-submodule`.
+1. `cd` into `extensions/peachai-submodule`.
 2. Run `./scripts/install-and-build.sh`.
-3. `cd` into `extensions/vscode` (Full path is now `extensions/blueberryai-submodule/extensions/vscode/`).
+3. `cd` into `extensions/vscode` (Full path is now `extensions/peachai-submodule/extensions/vscode/`).
 4. Run `npm run package`.
-5. This will create the `.vsix` extension within `extensions/blueberryai-submodule/extensions/vscode/build`.
-6. Right-click the `.vsix` in VSCode or blueberryAI and select `Install vsix as Extension`.
+5. This will create the `.vsix` extension within `extensions/peachai-submodule/extensions/vscode/build`.
+6. Right-click the `.vsix` in VSCode or peachAI and select `Install vsix as Extension`.
 
 ### Step 3: Integrate the Extension
 
-1. Copy the contents of the generated `extensions` folder into the `extensions/` folder of the packaged blueberryAI App.
-2. Delete any existing `blueberryai-submodule` folder in the `extensions/` folder of the packaged blueberryAI app.
-3. Double-click your overall blueberryAI app, and the extension should be built-in.
+1. Copy the contents of the generated `extensions` folder into the `extensions/` folder of the packaged peachAI App.
+2. Delete any existing `peachai-submodule` folder in the `extensions/` folder of the packaged peachAI app.
+3. Double-click your overall peachAI app, and the extension should be built-in.
  - On MacOS for example (Using VScode for .vsix installation)
-   1. `cp -r ~/.vscode/extensions/blueberryai.blueberryai-{blueberryAI_VERSION} {PATH_TO_blueberryAI.app}/Contents/Resources/app/extension`
-   2. `rm -rf {PATH_TO_blueberryAI.app}/Contents/Resources/app/extensions/blueberryai-submodule `
-   3. Double-click your overall blueberryAI app, and the extension should be built-in.
+   1. `cp -r ~/.vscode/extensions/peachai.peachai-{peachAI_VERSION} {PATH_TO_peachAI.app}/Contents/Resources/app/extension`
+   2. `rm -rf {PATH_TO_peachAI.app}/Contents/Resources/app/extensions/peachai-submodule `
+   3. Double-click your overall peachAI app, and the extension should be built-in.
 
 
 ### Step 4: Signing and Turn Into Installer

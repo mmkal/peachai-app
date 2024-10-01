@@ -1,6 +1,6 @@
 ---
 name: ✨ Feature request
-about: "Suggest a new idea of what blueberryAI could do (e.g.: add new shortcut, add new payment processor, etc.)"
+about: "Suggest a new idea of what peachAI could do (e.g.: add new shortcut, add new payment processor, etc.)"
 title: ""
 labels: "enhancement"
 assignees: "nang-dev,fryingpannn"

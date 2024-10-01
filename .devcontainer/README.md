@@ -1,4 +1,4 @@
-# blueberryAI Development Container
+# peachAI Development Container
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode)
 
@@ -30,7 +30,7 @@ If you already have VS Code and Docker installed, you can click the badge above 
 
 6. After the container is running:
     1. If you have the `DISPLAY` or `WAYLAND_DISPLAY` environment variables set locally (or in WSL on Windows), desktop apps in the container will be shown in local windows.
-    2. If these are not set, open a web browser and go to [http://localhost:6080](http://localhost:6080), or use a [VNC Viewer][def] to connect to `localhost:5901` and enter `vscode` as the password. Anything you start in VS Code, or the integrated terminal, will apblueberry here.
+    2. If these are not set, open a web browser and go to [http://localhost:6080](http://localhost:6080), or use a [VNC Viewer][def] to connect to `localhost:5901` and enter `vscode` as the password. Anything you start in VS Code, or the integrated terminal, will appeach here.
 
 Next: **[Try it out!](#try-it)**
 
@@ -48,7 +48,7 @@ Next: **[Try it out!](#try-it)**
 
 4. In the new tab, you should see noVNC. Click **Connect** and enter `vscode` as the password.
 
-Anything you start in VS Code, or the integrated terminal, will apblueberry here.
+Anything you start in VS Code, or the integrated terminal, will appeach here.
 
 Next: **[Try it out!](#try-it)**
 
@@ -70,7 +70,7 @@ You may see improved VNC responsiveness when accessing a codespace from VS Code 
 
     > **Tip:** You may also need change your VNC client's **Picture Quality** setting to **High** to get a full color desktop.
 
-4. Anything you start in VS Code, or the integrated terminal, will apblueberry here.
+4. Anything you start in VS Code, or the integrated terminal, will appeach here.
 
 Next: **[Try it out!](#try-it)**
 
@@ -101,7 +101,7 @@ Next, let's try debugging.
 
    > **Note:** If launching times out, you can increase the value of `timeout` in the "VS Code", "Attach Main Process", "Attach Extension Host", and "Attach to Shared Process" configurations in [launch.json](../../.vscode/launch.json). However, running `./scripts/code.sh` first will set up Electron which will usually solve timeout issues.
 
-3. After a bit, Code - OSS will apblueberry with the debugger attached!
+3. After a bit, Code - OSS will appeach with the debugger attached!
 
 Enjoy!
 

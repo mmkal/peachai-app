@@ -136,7 +136,7 @@ jobs:
           yarn playwright install
 
       - name: Compile and Download
-        run: ./scripts/blueberryai/setup-environment.sh
+        run: ./scripts/peachai/setup-environment.sh
 
       - name: Compile Integration Tests
         run: yarn --cwd test/integration/browser compile
@@ -149,7 +149,7 @@ jobs:
       #   continue-on-error: true
 
       # Part of the VSCode Scripts
-      # Disabling since it isn't relevant to blueberryAI
+      # Disabling since it isn't relevant to peachAI
       # - name: Run Unit Tests (node.js)
       #   id: nodejs-unit-tests
       #   run: yarn test-node
@@ -159,7 +159,7 @@ jobs:
         run: DISPLAY=:10 yarn test-browser-no-install --browser chromium
 
       # Part of the VSCode Scripts
-      # Disabling since it isn't relevant to blueberryAI
+      # Disabling since it isn't relevant to peachAI
       # - name: Run Integration Tests (Electron)
       #   id: electron-integration-tests
       #   run: DISPLAY=:10 ./scripts/test-integration.sh
@@ -193,7 +193,7 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
         run: |
-          ./scripts/blueberryai/setup-environment.sh
+          ./scripts/peachai/setup-environment.sh
           yarn install
           yarn add --dev npm-run-all
 

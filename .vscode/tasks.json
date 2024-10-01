@@ -5,9 +5,9 @@
 			"label": "setup-environment",
 			"type": "shell",
 			"windows": {
-				"command": "powershell ./scripts/blueberryai/setup-environment.ps1"
+				"command": "powershell ./scripts/peachai/setup-environment.ps1"
 			},
-			"command": "./scripts/blueberryai/setup-environment.sh",
+			"command": "./scripts/peachai/setup-environment.sh",
 			"problemMatcher": [] // Empty so users are not prompted to select progress reporting
 		},
 		{
