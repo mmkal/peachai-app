@@ -189,7 +189,7 @@ export class BulkFileOperations {
 						// noop -> "soft" rename to something that already exists
 						continue;
 					}
-					// map newResource onto oldResource so that text-edit apblueberry for
+					// map newResource onto oldResource so that text-edit appeach for
 					// the same file element
 					newToOldUri.set(edit.newResource, uri);
 
