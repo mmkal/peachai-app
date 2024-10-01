@@ -15,7 +15,7 @@ import { IRequestService } from 'vs/platform/request/common/request';
 import { AvailableForDownload, DisablementReason, IUpdateService, State, StateType, UpdateType } from 'vs/platform/update/common/update';
 
 export function createUpdateURL(platform: string, quality: string, productService: IProductService): string {
-	let updateURL = `${productService.updateUrl}/update/${platform}/${quality}/${productService.blueberryAIVersion}`;
+	let updateURL = `${productService.updateUrl}/update/${platform}/${quality}/${productService.peachAIVersion}`;
 	return updateURL;
 }
 
@@ -81,7 +81,7 @@ export abstract class AbstractUpdateService implements IUpdateService {
 			return;
 		}
 
-		if (!this.productService.updateUrl || !this.productService.blueberryAIVersion) {
+		if (!this.productService.updateUrl || !this.productService.peachAIVersion) {
 			this.setState(State.Disabled(DisablementReason.MissingConfiguration));
 			this.logService.info('update#ctor - updates are disabled as there is no update URL');
 			return;
