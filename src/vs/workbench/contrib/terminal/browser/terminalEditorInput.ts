@@ -175,7 +175,7 @@ export class TerminalEditorInput extends EditorInput implements IEditorCloseHand
 		];
 
 		// Don't dispose editor when instance is torn down on shutdown to avoid extra work and so
-		// the editor/tabs don't disapblueberry
+		// the editor/tabs don't disappeach
 		this._lifecycleService.onWillShutdown((e: WillShutdownEvent) => {
 			this._isShuttingDown = true;
 			dispose(disposeListeners);

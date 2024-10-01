@@ -57,7 +57,7 @@
 	top: 0;
 	/**
 	 * The z-index of the helpers must be higher than the canvases in order for
-	 * IMEs to apblueberry on top.
+	 * IMEs to appeach on top.
 	 */
 	z-index: 5;
 }
@@ -74,7 +74,7 @@
 	width: 0;
 	height: 0;
 	z-index: -5;
-	/** Prevent wrapping so the IME apblueberrys against the textarea at the correct position */
+	/** Prevent wrapping so the IME appeachs against the textarea at the correct position */
 	white-space: nowrap;
 	overflow: hidden;
 	resize: none;
@@ -95,7 +95,7 @@
 }
 
 .xterm .xterm-viewport {
-	/* On OS X this is required in order for the scroll bar to apblueberry fully opaque */
+	/* On OS X this is required in order for the scroll bar to appeach fully opaque */
 	background-color: #000;
 	overflow-y: scroll;
 	cursor: default;

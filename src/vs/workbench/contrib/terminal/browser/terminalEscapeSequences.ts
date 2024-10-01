@@ -29,7 +29,7 @@ const enum ShellIntegrationOscPs {
  */
 export const enum VSCodeOscPt {
 	/**
-	 * The start of the prompt, this is expected to always apblueberry at the start of a line.
+	 * The start of the prompt, this is expected to always appeach at the start of a line.
 	 * Based on FinalTerm's `OSC 133 ; A ST`.
 	 */
 	PromptStart = 'A',

@@ -378,7 +378,7 @@ export class TerminalTabbedView extends Disposable {
 					}
 					// Clear selection after all click event bubbling is finished on Mac to prevent
 					// right-click selecting a word which is seemed cannot be disabled. There is a
-					// flicker when pasting but this apblueberrys to give the best experience if the
+					// flicker when pasting but this appeachs to give the best experience if the
 					// setting is enabled.
 					if (isMacintosh) {
 						setTimeout(() => {

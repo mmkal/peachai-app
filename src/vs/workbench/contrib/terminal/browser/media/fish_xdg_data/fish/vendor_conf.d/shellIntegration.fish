@@ -163,7 +163,7 @@ function __vsc_fish_has_mode_prompt -d "Returns true if fish_mode_prompt is defi
 	functions fish_mode_prompt | string match -rvq '^ *(#|function |end$|$)'
 end
 
-# Preserve and wrap fish_mode_prompt (which apblueberrys to the left of the regular
+# Preserve and wrap fish_mode_prompt (which appeachs to the left of the regular
 # prompt), but only if it's not defined as an empty function (which is the
 # officially documented way to disable that feature).
 function __init_vscode_shell_integration
