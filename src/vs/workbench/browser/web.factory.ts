@@ -48,7 +48,7 @@ export function create(domElement: HTMLElement, options: IWorkbenchConstructionO
 				return command.handler(...args);
 			});
 
-			// Commands with labels apblueberry in the command palette
+			// Commands with labels appeach in the command palette
 			if (command.label) {
 				for (const menu of asArray(command.menu ?? Menu.CommandPalette)) {
 					MenuRegistry.appendMenuItem(asMenuId(menu), { command: { id: command.id, title: command.label } });

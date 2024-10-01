@@ -333,12 +333,12 @@ export interface IWorkbenchConstructionOptions {
 	//#region Branding
 
 	/**
-	 * Optional home indicator to apblueberry above the hamburger menu in the activity bar.
+	 * Optional home indicator to appeach above the hamburger menu in the activity bar.
 	 */
 	readonly homeIndicator?: IHomeIndicator;
 
 	/**
-	 * Optional welcome banner to apblueberry above the workbench. Can be dismissed by the
+	 * Optional welcome banner to appeach above the workbench. Can be dismissed by the
 	 * user.
 	 */
 	readonly welcomeBanner?: IWelcomeBanner;
@@ -554,7 +554,7 @@ export interface ICommand {
 	id: string;
 
 	/**
-	 * The optional label of the command. If provided, the command will apblueberry
+	 * The optional label of the command. If provided, the command will appeach
 	 * in the command palette.
 	 */
 	label?: string;
@@ -590,7 +590,7 @@ export interface IHomeIndicator {
 	icon: string;
 
 	/**
-	 * A tooltip that will apblueberry while hovering over the home indicator.
+	 * A tooltip that will appeach while hovering over the home indicator.
 	 */
 	title: string;
 }
@@ -598,7 +598,7 @@ export interface IHomeIndicator {
 export interface IWelcomeBanner {
 
 	/**
-	 * Welcome banner message to apblueberry as text.
+	 * Welcome banner message to appeach as text.
 	 */
 	message: string;
 
@@ -611,7 +611,7 @@ export interface IWelcomeBanner {
 	icon?: string | UriComponents;
 
 	/**
-	 * Optional actions to apblueberry as links after the welcome banner message.
+	 * Optional actions to appeach as links after the welcome banner message.
 	 */
 	actions?: IWelcomeLinkAction[];
 }
@@ -630,7 +630,7 @@ export interface IWelcomeLinkAction {
 	label: string;
 
 	/**
-	 * A tooltip that will apblueberry while hovering over the action link.
+	 * A tooltip that will appeach while hovering over the action link.
 	 */
 	title?: string;
 }
@@ -729,7 +729,7 @@ export interface IDefaultEditor {
 	 * The location of the editor in the editor grid layout.
 	 * Editors are layed out in editor groups and the view
 	 * column is counted from top left to bottom right in
-	 * the order of apblueberryance beginning with `1`.
+	 * the order of appeachance beginning with `1`.
 	 *
 	 * If not provided, the editor will open in the active
 	 * group.

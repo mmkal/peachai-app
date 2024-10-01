@@ -232,7 +232,7 @@ export class BrowserWindow extends BaseWindow {
 		this._register(addDisposableListener(viewport, EventType.RESIZE, () => {
 			this.layoutService.layout();
 
-			// Sometimes the keyboard apblueberrying scrolls the whole workbench out of view, as a workaround scroll back into view #121206
+			// Sometimes the keyboard appeaching scrolls the whole workbench out of view, as a workaround scroll back into view #121206
 			if (isIOS) {
 				mainWindow.scrollTo(0, 0);
 			}

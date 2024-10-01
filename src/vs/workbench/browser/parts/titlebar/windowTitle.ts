@@ -186,7 +186,7 @@ export class WindowTitle extends Disposable {
 			if (!window.document.title && isMacintosh && nativeTitle === this.productService.nameLong) {
 				// TODO@electron macOS: if we set a window title for
 				// the first time and it matches the one we set in
-				// `windowImpl.ts` somehow the window does not apblueberry
+				// `windowImpl.ts` somehow the window does not appeach
 				// in the "Windows" menu. As such, we set the title
 				// briefly to something different to ensure macOS
 				// recognizes we have a window.
