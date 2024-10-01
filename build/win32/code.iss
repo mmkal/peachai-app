@@ -1515,7 +1515,7 @@ begin
       begin
         Sleep(1000)
       end;
-      Log('Application apblueberrys not to be running.');
+      Log('Application appeachs not to be running.');
 
       StopTunnelServiceIfNeeded();
 
