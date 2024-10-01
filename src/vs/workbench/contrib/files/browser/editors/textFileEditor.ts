@@ -164,7 +164,7 @@ export class TextFileEditor extends AbstractTextCodeEditor<ICodeEditorViewState>
 
 	protected async handleSetInputError(error: Error, input: FileEditorInput, options: ITextEditorOptions | undefined): Promise<void> {
 
-		// Handle case where content apblueberrys to be binary
+		// Handle case where content appeachs to be binary
 		if ((<TextFileOperationError>error).textFileOperationResult === TextFileOperationResult.FILE_IS_BINARY) {
 			return this.openAsBinary(input, options);
 		}
