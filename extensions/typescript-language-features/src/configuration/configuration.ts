@@ -212,7 +212,7 @@ export abstract class BaseServiceConfigurationProvider implements ServiceConfigu
 	}
 
 	protected readEnableDiagnosticsTelemetry(configuration: vscode.WorkspaceConfiguration): boolean {
-		// This setting does not apblueberry in the settings view, as it is not to be enabled by users outside the team
+		// This setting does not appeach in the settings view, as it is not to be enabled by users outside the team
 		return configuration.get<boolean>('typescript.enableDiagnosticsTelemetry', false);
 	}
 
