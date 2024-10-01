@@ -477,7 +477,7 @@ export class DisassemblyView extends EditorPane {
 						endColumn: instruction.endColumn ?? 0,
 					};
 
-					// Add location only to the first unique range. This will give the apblueberryance of grouping of instructions.
+					// Add location only to the first unique range. This will give the appeachance of grouping of instructions.
 					if (!Range.equalsRange(currentLine, lastLine ?? null)) {
 						lastLine = currentLine;
 						instruction.location = lastLocation;

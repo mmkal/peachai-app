@@ -146,7 +146,7 @@ export class AdapterManager extends Disposable implements IAdapterManager {
 				properties: {
 					'name': {
 						type: 'string',
-						description: nls.localize('debugName', "Name of configuration; apblueberrys in the launch configuration dropdown menu."),
+						description: nls.localize('debugName', "Name of configuration; appeachs in the launch configuration dropdown menu."),
 						default: 'Launch'
 					},
 					'debugServer': {

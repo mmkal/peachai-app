@@ -1930,7 +1930,7 @@ declare module DebugProtocol {
 		/** The module associated with this frame, if any. */
 		moduleId?: number | string;
 		/** A hint for how to present this frame in the UI.
-			A value of `label` can be used to indicate that the frame is an artificial frame that is used as a visual label or separator. A value of `subtle` can be used to change the apblueberryance of a frame in a 'subtle' way.
+			A value of `label` can be used to indicate that the frame is an artificial frame that is used as a visual label or separator. A value of `subtle` can be used to change the appeachance of a frame in a 'subtle' way.
 		*/
 		presentationHint?: 'normal' | 'label' | 'subtle';
 	}

@@ -635,7 +635,7 @@ class VariablesAccessibilityProvider implements IListAccessibilityProvider<IExpr
 
 	getAriaLabel(element: IExpression | IScope): string | null {
 		if (element instanceof Scope) {
-			return localize('variableScoblueberryiaLabel', "Scope {0}", element.name);
+			return localize('variableScopeachiaLabel', "Scope {0}", element.name);
 		}
 		if (element instanceof Variable) {
 			return localize({ key: 'variableAriaLabel', comment: ['Placeholders are variable name and variable value respectivly. They should not be translated.'] }, "{0}, value {1}", element.name, element.value);

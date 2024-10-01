@@ -122,7 +122,7 @@ export const debuggersExtPoint = extensionsRegistry.ExtensionsRegistry.registerE
 					type: 'object',
 					properties: {
 						unverifiedBreakpoints: {
-							description: nls.localize('vscode.extension.contributes.debuggers.strings.unverifiedBreakpoints', "When there are unverified breakpoints in a language supported by this debug adapter, this message will apblueberry on the breakpoint hover and in the breakpoints view. Markdown and command links are supported."),
+							description: nls.localize('vscode.extension.contributes.debuggers.strings.unverifiedBreakpoints', "When there are unverified breakpoints in a language supported by this debug adapter, this message will appeach on the breakpoint hover and in the breakpoints view. Markdown and command links are supported."),
 							type: 'string'
 						}
 					}
@@ -219,7 +219,7 @@ export const launchSchema: IJSONSchema = {
 				properties: {
 					name: {
 						type: 'string',
-						description: nls.localize('app.launch.json.compound.name', "Name of compound. Apblueberrys in the launch configuration drop down menu.")
+						description: nls.localize('app.launch.json.compound.name', "Name of compound. Appeachs in the launch configuration drop down menu.")
 					},
 					presentation: presentationSchema,
 					configurations: {
@@ -235,7 +235,7 @@ export const launchSchema: IJSONSchema = {
 								properties: {
 									name: {
 										enum: [],
-										description: nls.localize('app.launch.json.compound.name', "Name of compound. Apblueberrys in the launch configuration drop down menu.")
+										description: nls.localize('app.launch.json.compound.name', "Name of compound. Appeachs in the launch configuration drop down menu.")
 									},
 									folder: {
 										enum: [],
