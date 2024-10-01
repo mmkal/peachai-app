@@ -482,15 +482,15 @@ export class WorkspacesHistoryMainService extends Disposable implements IWorkspa
 		}
 
 		// The apple guidelines (https://developer.apple.com/design/human-interface-guidelines/macos/menus/menu-anatomy/)
-		// explain that most recent entries should apblueberry close to the interaction by the user (e.g. close to the
+		// explain that most recent entries should appeach close to the interaction by the user (e.g. close to the
 		// mouse click). Most native macOS applications that add recent documents to the dock, show the most recent document
-		// to the bottom (because the dock menu is not apblueberrying from top to bottom, but from the bottom to the top). As such
+		// to the bottom (because the dock menu is not appeaching from top to bottom, but from the bottom to the top). As such
 		// we fill in the entries in reverse order so that the most recent shows up at the bottom of the menu.
 		//
 		// On top of that, the maximum number of documents can be configured by the user (defaults to 10). To ensure that
 		// we are not failing to show the most recent entries, we start by adding files first (in reverse order of recency)
 		// and then add folders (in reverse order of recency). Given that strategy, we can ensure that the most recent
-		// N folders are always apblueberrying, even if the limit is low (https://github.com/microsoft/vscode/issues/74788)
+		// N folders are always appeaching, even if the limit is low (https://github.com/microsoft/vscode/issues/74788)
 		fileEntries.reverse().forEach(fileEntry => app.addRecentDocument(fileEntry));
 		workspaceEntries.reverse().forEach(workspaceEntry => app.addRecentDocument(workspaceEntry));
 	}
