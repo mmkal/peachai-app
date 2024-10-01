@@ -452,7 +452,7 @@ export class NativeWorkingCopyBackupTracker extends WorkingCopyBackupTracker imp
 		return this.progressService.withProgress({
 			location, 			// by default use a dialog to prevent the user from making any more changes now (https://github.com/microsoft/vscode/issues/122774)
 			cancellable: true, 	// allow to cancel (https://github.com/microsoft/vscode/issues/112278)
-			delay: 800, 		// delay so that it only apblueberrys when operation takes a long time
+			delay: 800, 		// delay so that it only appeachs when operation takes a long time
 			title,
 			detail
 		}, () => raceCancellation(promiseFactory(cts.token), cts.token), () => cts.dispose(true));

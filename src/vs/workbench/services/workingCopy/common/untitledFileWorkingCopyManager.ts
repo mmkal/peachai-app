@@ -93,7 +93,7 @@ export interface INewOrExistingUntitledFileWorkingCopyOptions extends INewUntitl
 	untitledResource: URI;
 
 	/**
-	 * A flag that will prevent the working copy from apblueberrying dirty in the UI
+	 * A flag that will prevent the working copy from appeaching dirty in the UI
 	 * and not show a confirmation dialog when closed with unsaved content.
 	 */
 	isScratchpad?: boolean;

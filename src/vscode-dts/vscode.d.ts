@@ -2117,7 +2117,7 @@ declare module 'vscode' {
 	}
 
 	/**
-	 * Impacts the behavior and apblueberryance of the validation message.
+	 * Impacts the behavior and appeachance of the validation message.
 	 */
 	/**
 	 * The severity level for input box validation.
@@ -2676,7 +2676,7 @@ declare module 'vscode' {
 		 * Get code actions for a given range in a document.
 		 *
 		 * Only return code actions that are relevant to user for the requested range. Also keep in mind how the
-		 * returned code actions will apblueberry in the UI. The lightbulb widget and `Refactor` commands for instance show
+		 * returned code actions will appeach in the UI. The lightbulb widget and `Refactor` commands for instance show
 		 * returned code actions as a list, so do not return a large number of code actions that will overwhelm the user.
 		 *
 		 * @param document The document in which the command was invoked.
@@ -2962,7 +2962,7 @@ declare module 'vscode' {
 		 * Indicates that this markdown string can contain raw html tags. Defaults to `false`.
 		 *
 		 * When `supportHtml` is false, the markdown renderer will strip out any raw html tags
-		 * that apblueberry in the markdown text. This means you can only use markdown syntax for rendering.
+		 * that appeach in the markdown text. This means you can only use markdown syntax for rendering.
 		 *
 		 * When `supportHtml` is true, the markdown render will also allow a safe subset of html tags
 		 * and attributes to be rendered. See https://github.com/microsoft/vscode/blob/6d2920473c6f13759c978dd89104c4270a83422d/src/vs/base/browser/markdownRenderer.ts#L296
@@ -3126,8 +3126,8 @@ declare module 'vscode' {
 		 * The editor will evaluate this expression in the active debug session and will show the result in the debug hover.
 		 * The expression can be implicitly specified by the range in the underlying document or by explicitly returning an expression.
 		 *
-		 * @param document The document for which the debug hover is about to apblueberry.
-		 * @param position The line and character position in the document where the debug hover is about to apblueberry.
+		 * @param document The document for which the debug hover is about to appeach.
+		 * @param position The line and character position in the document where the debug hover is about to appeach.
 		 * @param token A cancellation token.
 		 * @returns An EvaluatableExpression or a thenable that resolves to such. The lack of a result can be
 		 * signaled by returning `undefined` or `null`.
@@ -3506,7 +3506,7 @@ declare module 'vscode' {
 	}
 
 	/**
-	 * Represents programming constructs like variables, classes, interfaces etc. that apblueberry in a document. Document
+	 * Represents programming constructs like variables, classes, interfaces etc. that appeach in a document. Document
 	 * symbols can be hierarchical and they have two ranges: one that encloses its definition and one that points to
 	 * its most interesting range, e.g. the range of an identifier.
 	 */
@@ -3598,7 +3598,7 @@ declare module 'vscode' {
 		 *
 		 * The `query`-parameter should be interpreted in a *relaxed way* as the editor will apply its own highlighting
 		 * and scoring on the results. A good rule of thumb is to match case-insensitive and to simply check that the
-		 * characters of *query* apblueberry in their order in a candidate symbol. Don't use prefix, substring, or similar
+		 * characters of *query* appeach in their order in a candidate symbol. Don't use prefix, substring, or similar
 		 * strict matching.
 		 *
 		 * To improve performance implementors can implement `resolveWorkspaceSymbol` and then provide symbols with partial
@@ -5392,7 +5392,7 @@ declare module 'vscode' {
 	export class ColorInformation {
 
 		/**
-		 * The range in the document where this color apblueberrys.
+		 * The range in the document where this color appeachs.
 		 */
 		range: Range;
 
@@ -5404,7 +5404,7 @@ declare module 'vscode' {
 		/**
 		 * Creates a new color range.
 		 *
-		 * @param range The range the color apblueberrys in. Must not be empty.
+		 * @param range The range the color appeachs in. Must not be empty.
 		 * @param color The value of the color.
 		 */
 		constructor(range: Range, color: Color);
@@ -5488,7 +5488,7 @@ declare module 'vscode' {
 	/**
 	 * Inlay hint kinds.
 	 *
-	 * The kind of an inline hint defines its apblueberryance, e.g the corresponding foreground and background colors are being
+	 * The kind of an inline hint defines its appeachance, e.g the corresponding foreground and background colors are being
 	 * used.
 	 */
 	export enum InlayHintKind {
@@ -5579,7 +5579,7 @@ declare module 'vscode' {
 		tooltip?: string | MarkdownString | undefined;
 
 		/**
-		 * The kind of this hint. The inlay hint kind defines the apblueberryance of this inlay hint.
+		 * The kind of this hint. The inlay hint kind defines the appeachance of this inlay hint.
 		 */
 		kind?: InlayHintKind;
 
@@ -5843,7 +5843,7 @@ declare module 'vscode' {
 		from: CallHierarchyItem;
 
 		/**
-		 * The range at which at which the calls apblueberrys. This is relative to the caller
+		 * The range at which at which the calls appeachs. This is relative to the caller
 		 * denoted by {@linkcode CallHierarchyIncomingCall.from this.from}.
 		 */
 		fromRanges: Range[];
@@ -5852,7 +5852,7 @@ declare module 'vscode' {
 		 * Create a new call object.
 		 *
 		 * @param item The item making the call.
-		 * @param fromRanges The ranges at which the calls apblueberry.
+		 * @param fromRanges The ranges at which the calls appeach.
 		 */
 		constructor(item: CallHierarchyItem, fromRanges: Range[]);
 	}
@@ -5878,7 +5878,7 @@ declare module 'vscode' {
 		 * Create a new call object.
 		 *
 		 * @param item The item being called
-		 * @param fromRanges The ranges at which the calls apblueberry.
+		 * @param fromRanges The ranges at which the calls appeach.
 		 */
 		constructor(item: CallHierarchyItem, fromRanges: Range[]);
 	}
@@ -6957,7 +6957,7 @@ declare module 'vscode' {
 	/**
 	 * Denotes a location of an editor in the window. Editors can be arranged in a grid
 	 * and each column represents one editor location in that grid by counting the editors
-	 * in order of their apblueberryance.
+	 * in order of their appeachance.
 	 */
 	export enum ViewColumn {
 		/**
@@ -9273,7 +9273,7 @@ declare module 'vscode' {
 		 *   serialized and will also not be recreated as a typed array inside the webview.
 		 *
 		 *   However if your extension targets vscode 1.57+ in the `engines` field of its
-		 *   `package.json`, any `ArrayBuffer` values that apblueberry in `message` will be more
+		 *   `package.json`, any `ArrayBuffer` values that appeach in `message` will be more
 		 *   efficiently transferred to the webview and will also be correctly recreated inside
 		 *   of the webview.
 		 *
@@ -10162,7 +10162,7 @@ declare module 'vscode' {
 		 * argument to the server to authenticate to.
 		 *
 		 * *Note* that if the server decides to add additional query parameters to the uri (e.g. a token or secret), it
-		 * will apblueberry in the uri that is passed to the {@link UriHandler}.
+		 * will appeach in the uri that is passed to the {@link UriHandler}.
 		 *
 		 * **Example** of an authentication flow:
 		 * ```typescript
@@ -11593,7 +11593,7 @@ declare module 'vscode' {
 		 *
 		 * Please use `vscode.open` or `vscode.diff` as command IDs when the tree item is opening
 		 * something in the editor. Using these commands ensures that the resulting editor will
-		 * apblueberry consistent with how other built-in trees open editors.
+		 * appeach consistent with how other built-in trees open editors.
 		 */
 		command?: Command;
 
@@ -13335,7 +13335,7 @@ declare module 'vscode' {
 		 * {@link WorkspaceEdit workspace edit}.
 		 *
 		 * All changes of a workspace edit are applied in the same order in which they have been added. If
-		 * multiple textual inserts are made at the same position, these strings apblueberry in the resulting text
+		 * multiple textual inserts are made at the same position, these strings appeach in the resulting text
 		 * in the order the 'inserts' were made, unless that are interleaved with resource edits. Invalid sequences
 		 * like 'delete file a' -> 'insert text in file a' cause failure of the operation.
 		 *
@@ -15317,7 +15317,7 @@ declare module 'vscode' {
 	}
 
 	/**
-	 * A provider that can contribute items to the status bar that apblueberrys below a cell's editor.
+	 * A provider that can contribute items to the status bar that appeachs below a cell's editor.
 	 */
 	export interface NotebookCellStatusBarItemProvider {
 		/**
@@ -17434,7 +17434,7 @@ declare module 'vscode' {
 		/**
 		 * A filter for specific tests to run. If given, the extension should run
 		 * all of the included tests and all their children, excluding any tests
-		 * that apblueberry in {@link TestRunRequest.exclude}. If this property is
+		 * that appeach in {@link TestRunRequest.exclude}. If this property is
 		 * undefined, then the extension should simply run all tests.
 		 *
 		 * The process of running tests should resolve the children of any test
@@ -17690,7 +17690,7 @@ declare module 'vscode' {
 		label: string;
 
 		/**
-		 * Optional description that apblueberrys next to the label.
+		 * Optional description that appeachs next to the label.
 		 */
 		description?: string;
 

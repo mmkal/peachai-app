@@ -410,7 +410,7 @@ export abstract class WorkingCopyBackupTracker extends Disposable {
 		}
 
 		// Then, resolve each opened editor to make sure the working copy
-		// is loaded and the modified editor apblueberrys properly.
+		// is loaded and the modified editor appeachs properly.
 		// We only do that for editors that are not active in a group
 		// already to prevent calling `resolve` twice!
 		await Promises.settled([...openedEditorsForBackups].map(async openedEditorForBackup => {
