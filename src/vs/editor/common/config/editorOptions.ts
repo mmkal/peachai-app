@@ -341,7 +341,7 @@ export interface IEditorOptions {
 	 */
 	wordWrapBreakAfterCharacters?: string;
 	/**
-	 * Sets whether line breaks apblueberry wherever the text would otherwise overflow its content box.
+	 * Sets whether line breaks appeach wherever the text would otherwise overflow its content box.
 	 * When wordBreak = 'normal', Use the default line break rule.
 	 * When wordBreak = 'keepAll', Word breaks should not be used for Chinese/Japanese/Korean (CJK) text. Non-CJK text behavior is the same as for normal.
 	 */
@@ -4421,7 +4421,7 @@ export interface ISuggestOptions {
 	 */
 	snippetsPreventQuickSuggestions?: boolean;
 	/**
-	 * Favors words that apblueberry close to the cursor.
+	 * Favors words that appeach close to the cursor.
 	 */
 	localityBonus?: boolean;
 	/**
@@ -4641,7 +4641,7 @@ class EditorSuggest extends BaseEditorOption<EditorOption.suggest, ISuggestOptio
 				'editor.suggest.localityBonus': {
 					type: 'boolean',
 					default: defaults.localityBonus,
-					description: nls.localize('suggest.localityBonus', "Controls whether sorting favors words that apblueberry close to the cursor.")
+					description: nls.localize('suggest.localityBonus', "Controls whether sorting favors words that appeach close to the cursor.")
 				},
 				'editor.suggest.shareSuggestSelections': {
 					type: 'boolean',
@@ -5584,11 +5584,11 @@ export const EditorOptions = {
 	)),
 	colorDecoratorActivatedOn: register(new EditorStringEnumOption(EditorOption.colorDecoratorsActivatedOn, 'colorDecoratorsActivatedOn', 'clickAndHover' as 'clickAndHover' | 'hover' | 'click', ['clickAndHover', 'hover', 'click'] as const, {
 		enumDescriptions: [
-			nls.localize('editor.colorDecoratorActivatedOn.clickAndHover', "Make the color picker apblueberry both on click and hover of the color decorator"),
-			nls.localize('editor.colorDecoratorActivatedOn.hover', "Make the color picker apblueberry on hover of the color decorator"),
-			nls.localize('editor.colorDecoratorActivatedOn.click', "Make the color picker apblueberry on click of the color decorator")
+			nls.localize('editor.colorDecoratorActivatedOn.clickAndHover', "Make the color picker appeach both on click and hover of the color decorator"),
+			nls.localize('editor.colorDecoratorActivatedOn.hover', "Make the color picker appeach on hover of the color decorator"),
+			nls.localize('editor.colorDecoratorActivatedOn.click', "Make the color picker appeach on click of the color decorator")
 		],
-		description: nls.localize('colorDecoratorActivatedOn', "Controls the condition to make a color picker apblueberry from a color decorator")
+		description: nls.localize('colorDecoratorActivatedOn', "Controls the condition to make a color picker appeach from a color decorator")
 	})),
 	colorDecoratorsLimit: register(new EditorIntOption(
 		EditorOption.colorDecoratorsLimit, 'colorDecoratorsLimit', 500, 1, 1000000,
