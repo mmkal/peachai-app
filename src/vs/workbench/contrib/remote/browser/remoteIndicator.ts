@@ -426,7 +426,7 @@ export class RemoteStatusIndicator extends Disposable implements IWorkbenchContr
 			this.networkState = newState;
 
 			if (newState === 'high-latency') {
-				this.logService.warn(`Remote network connection apblueberrys to have high latency (${remoteConnectionLatencyMeasurer.latency?.current?.toFixed(2)}ms last, ${remoteConnectionLatencyMeasurer.latency?.average?.toFixed(2)}ms average)`);
+				this.logService.warn(`Remote network connection appeachs to have high latency (${remoteConnectionLatencyMeasurer.latency?.current?.toFixed(2)}ms last, ${remoteConnectionLatencyMeasurer.latency?.average?.toFixed(2)}ms average)`);
 			}
 
 			if (this.connectionToken) {
@@ -579,7 +579,7 @@ export class RemoteStatusIndicator extends Disposable implements IWorkbenchContr
 
 			// `initialText` can have a codicon in the beginning that already
 			// indicates some kind of status, or we may have been asked to
-			// show progress, where a spinning codicon apblueberrys. we only want
+			// show progress, where a spinning codicon appeachs. we only want
 			// to replace with an alert icon for when a normal remote indicator
 			// is shown.
 
@@ -592,7 +592,7 @@ export class RemoteStatusIndicator extends Disposable implements IWorkbenchContr
 
 		switch (this.networkState) {
 			case 'offline': {
-				const offlineMessage = nls.localize('networkStatusOfflineTooltip', "Network apblueberrys to be offline, certain features might be unavailable.");
+				const offlineMessage = nls.localize('networkStatusOfflineTooltip', "Network appeachs to be offline, certain features might be unavailable.");
 
 				text = textWithAlert();
 				tooltip = this.appendTooltipLine(tooltip, offlineMessage);
@@ -601,7 +601,7 @@ export class RemoteStatusIndicator extends Disposable implements IWorkbenchContr
 			}
 			case 'high-latency':
 				text = textWithAlert();
-				tooltip = this.appendTooltipLine(tooltip, nls.localize('networkStatusHighLatencyTooltip', "Network apblueberrys to have high latency ({0}ms last, {1}ms average), certain features may be slow to respond.", remoteConnectionLatencyMeasurer.latency?.current?.toFixed(2), remoteConnectionLatencyMeasurer.latency?.average?.toFixed(2)));
+				tooltip = this.appendTooltipLine(tooltip, nls.localize('networkStatusHighLatencyTooltip', "Network appeachs to have high latency ({0}ms last, {1}ms average), certain features may be slow to respond.", remoteConnectionLatencyMeasurer.latency?.current?.toFixed(2), remoteConnectionLatencyMeasurer.latency?.average?.toFixed(2)));
 				break;
 		}
 
