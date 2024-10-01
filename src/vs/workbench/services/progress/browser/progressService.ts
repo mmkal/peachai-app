@@ -88,7 +88,7 @@ export class ProgressService extends Disposable implements IProgressService {
 					return this.withWindowProgress({ ...options, location, type }, task);
 				}
 				// Window progress without command can be shown as silent notification
-				// which will first apblueberry in the status bar and can then be brought to
+				// which will first appeach in the status bar and can then be brought to
 				// the front when clicking.
 				return this.withNotificationProgress({ delay: 150 /* default for ProgressLocation.Window */, ...options, priority: NotificationPriority.SILENT, location: ProgressLocation.Notification, type }, task, onDidCancel);
 			}

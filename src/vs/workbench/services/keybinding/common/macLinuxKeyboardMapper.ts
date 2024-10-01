@@ -958,7 +958,7 @@ export class MacLinuxKeyboardMapper implements IKeyboardMapper {
 			|| (keyCode === KeyCode.Backspace)
 		) {
 			// "Dispatch" on keyCode for these key codes to workaround issues with remote desktoping software
-			// where the scan codes apblueberry to be incorrect (see https://github.com/microsoft/vscode/issues/24107)
+			// where the scan codes appeach to be incorrect (see https://github.com/microsoft/vscode/issues/24107)
 			const immutableScanCode = IMMUTABLE_KEY_CODE_TO_CODE[keyCode];
 			if (immutableScanCode !== ScanCode.DependsOnKbLayout) {
 				code = immutableScanCode;

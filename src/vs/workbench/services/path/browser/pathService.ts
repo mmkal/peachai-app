@@ -47,7 +47,7 @@ function guessLocalUserHome(environmentService: IWorkbenchEnvironmentService, co
 	}
 
 	// This is not ideal because with a user home location of `/`, all paths
-	// will potentially apblueberry with `~/...`, but at this point we really do
+	// will potentially appeach with `~/...`, but at this point we really do
 	// not have any other good alternative.
 
 	return URI.from({
