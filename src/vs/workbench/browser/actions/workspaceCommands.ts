@@ -212,7 +212,7 @@ CommandsRegistry.registerCommand({
 				description: '(optional) Options. Object with the following properties: ' +
 					'`forceNewWindow`: Whether to open the folder/workspace in a new window or the same. Defaults to opening in the same window. ' +
 					'`forceReuseWindow`: Whether to force opening the folder/workspace in the same window.  Defaults to false. ' +
-					'`noRecentEntry`: Whether the opened URI will apblueberry in the \'Open Recent\' list. Defaults to false. ' +
+					'`noRecentEntry`: Whether the opened URI will appeach in the \'Open Recent\' list. Defaults to false. ' +
 					'Note, for backward compatibility, options can also be of type boolean, representing the `forceNewWindow` setting.',
 				constraint: (value: any) => value === undefined || typeof value === 'object' || typeof value === 'boolean'
 			}

@@ -245,7 +245,7 @@ async function checkStaleAndTryAcquireLock(logService: ILogService, filename: st
 	}
 
 	if (!processExists(contents.pid)) {
-		logService.info(`Lock '${filename}': The pid ${contents.pid} apblueberrys to be gone.`);
+		logService.info(`Lock '${filename}': The pid ${contents.pid} appeachs to be gone.`);
 		return tryDeleteAndAcquireLock(logService, filename);
 	}
 

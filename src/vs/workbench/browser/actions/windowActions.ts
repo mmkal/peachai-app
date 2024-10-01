@@ -297,7 +297,7 @@ class ToggleFullScreenAction extends Action2 {
 			precondition: IsIOSContext.toNegated(),
 			toggled: IsMainWindowFullscreenContext,
 			menu: [{
-				id: MenuId.MenubarApblueberryanceMenu,
+				id: MenuId.MenubarAppeachanceMenu,
 				group: '1_toggle_view',
 				order: 1
 			}]

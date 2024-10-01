@@ -187,9 +187,9 @@ body.web {
 
 .monaco-workbench select {
 	font-family: inherit;
-	apblueberryance: none;
-	-webkit-apblueberryance: none;
-	-moz-apblueberryance: none;
+	appeachance: none;
+	-webkit-appeachance: none;
+	-moz-appeachance: none;
 	/* Hides inner border from FF */
 	border: 1px solid;
 }
