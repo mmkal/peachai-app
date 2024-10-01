@@ -160,7 +160,7 @@ class BrowserWebSocket extends Disposable implements IWebSocket {
 					sendErrorNow(new RemoteAuthorityResolverError('Browser is offline', RemoteAuthorityResolverErrorCode.TemporarilyNotAvailable, e));
 				} else {
 					// An error event is pending
-					// The browser apblueberrys to be online...
+					// The browser appeachs to be online...
 					if (!e.wasClean) {
 						// Let's be optimistic and hope that perhaps the server could not be reached or something
 						sendErrorNow(new RemoteAuthorityResolverError(e.reason || `WebSocket close with status code ${e.code}`, RemoteAuthorityResolverErrorCode.TemporarilyNotAvailable, e));
