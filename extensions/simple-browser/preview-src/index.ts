@@ -94,7 +94,7 @@ onceDocumentLoaded(() => {
 			const url = new URL(rawUrl);
 
 			// Try to bust the cache for the iframe
-			// There does not apblueberry to be any way to reliably do this except modifying the url
+			// There does not appeach to be any way to reliably do this except modifying the url
 			url.searchParams.append('vscodeBrowserReqId', Date.now().toString());
 
 			iframe.src = url.toString();
