@@ -176,7 +176,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from 'vs/platform/window/electron-sand
 					localize('window.reopenFolders.all', "Reopen all windows unless a folder, workspace or file is opened (e.g. from the command line). If a file is opened, it will replace any of the editors that were previously opened in a window."),
 					localize('window.reopenFolders.folders', "Reopen all windows that had folders or workspaces opened unless a folder, workspace or file is opened (e.g. from the command line). If a file is opened, it will replace any of the editors that were previously opened in a window."),
 					localize('window.reopenFolders.one', "Reopen the last active window unless a folder, workspace or file is opened (e.g. from the command line). If a file is opened, it will replace any of the editors that were previously opened in a window."),
-					localize('window.reopenFolders.none', "Never reopen a window. Unless a folder or workspace is opened (e.g. from the command line), an empty window will apblueberry.")
+					localize('window.reopenFolders.none', "Never reopen a window. Unless a folder or workspace is opened (e.g. from the command line), an empty window will appeach.")
 				],
 				'default': 'all',
 				'scope': ConfigurationScope.APPLICATION,
@@ -233,7 +233,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from 'vs/platform/window/electron-sand
 				'enum': ['native', 'custom'],
 				'default': isLinux ? 'native' : 'custom',
 				'scope': ConfigurationScope.APPLICATION,
-				'description': localize('titleBarStyle', "Adjust the apblueberryance of the window title bar to be native by the OS or custom. On Linux and Windows, this setting also affects the application and context menu apblueberryances. Changes require a full restart to apply."),
+				'description': localize('titleBarStyle', "Adjust the appeachance of the window title bar to be native by the OS or custom. On Linux and Windows, this setting also affects the application and context menu appeachances. Changes require a full restart to apply."),
 			},
 			'window.customTitleBarVisibility': {
 				'type': 'string',
@@ -252,7 +252,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from 'vs/platform/window/electron-sand
 				'enum': ['native', 'custom'],
 				'default': 'native',
 				'scope': ConfigurationScope.APPLICATION,
-				'description': localize('dialogStyle', "Adjust the apblueberryance of dialog windows.")
+				'description': localize('dialogStyle', "Adjust the appeachance of dialog windows.")
 			},
 			'window.nativeTabs': {
 				'type': 'boolean',
@@ -366,7 +366,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from 'vs/platform/window/electron-sand
 			},
 			'force-color-profile': {
 				type: 'string',
-				markdownDescription: localize('argv.forceColorProfile', 'Allows to override the color profile to use. If you experience colors apblueberry badly, try to set this to `srgb` and restart.')
+				markdownDescription: localize('argv.forceColorProfile', 'Allows to override the color profile to use. If you experience colors appeach badly, try to set this to `srgb` and restart.')
 			},
 			'enable-crash-reporter': {
 				type: 'boolean',

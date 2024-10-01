@@ -145,7 +145,7 @@ registry.registerConfiguration({
 	'properties': {
 		'workbench.enableExperiments': {
 			'type': 'boolean',
-			'description': localize('workbench.enableExperiments', "Fetches experiments to run from blueberryAI servers."),
+			'description': localize('workbench.enableExperiments', "Fetches experiments to run from peachAI servers."),
 			'default': true,
 			'scope': ConfigurationScope.APPLICATION,
 			'restricted': true,

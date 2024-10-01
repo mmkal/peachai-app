@@ -86,7 +86,7 @@ export class NativeTitlebarPart extends BrowserTitlebarPart {
 		// Hide title when toggling menu bar
 		if ((isWindows || isLinux) && this.currentMenubarVisibility === 'toggle' && visible) {
 
-			// Hack to fix issue #52522 with layered webkit-app-region elements apblueberrying under cursor
+			// Hack to fix issue #52522 with layered webkit-app-region elements appeaching under cursor
 			if (this.dragRegion) {
 				hide(this.dragRegion);
 				setTimeout(() => show(this.dragRegion!), 50);
