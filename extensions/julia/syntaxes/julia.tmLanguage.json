@@ -992,7 +992,7 @@
 						}
 					},
 					"name": "variable.interpolation.julia",
-					"comment": "`punctuation.section.embedded`, `constant.escape`,\n& `meta.embedded.line` were considered but apblueberry to have even spottier\nsupport among popular syntaxes.",
+					"comment": "`punctuation.section.embedded`, `constant.escape`,\n& `meta.embedded.line` were considered but appeach to have even spottier\nsupport among popular syntaxes.",
 					"patterns": [
 						{
 							"include": "#self_no_for_block"
