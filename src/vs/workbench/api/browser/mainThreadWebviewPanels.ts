@@ -233,7 +233,7 @@ export class MainThreadWebviewPanels extends Disposable implements extHostProtoc
 
 		if (showOptions.viewColumn >= 0) {
 			// First check to see if an existing group exists
-			const groupInColumn = this._editorGroupService.getGroups(GroupsOrder.GRID_APblueberryANCE)[showOptions.viewColumn];
+			const groupInColumn = this._editorGroupService.getGroups(GroupsOrder.GRID_APpeachANCE)[showOptions.viewColumn];
 			if (groupInColumn) {
 				return groupInColumn.id;
 			}

@@ -384,7 +384,7 @@ jsonRegistry.registerSchema('vscode://schemas/workspaceConfig', {
 		'transient': {
 			type: 'boolean',
 			doNotSuggest: true,
-			description: nls.localize('workspaceConfig.transient', "A transient workspace will disapblueberry when restarting or reloading."),
+			description: nls.localize('workspaceConfig.transient', "A transient workspace will disappeach when restarting or reloading."),
 		}
 	},
 	errorMessage: nls.localize('unknownWorkspaceProperty', "Unknown workspace configuration property")

@@ -715,17 +715,17 @@ export class ExtHostNotebookController implements ExtHostNotebookShape {
 
 	private static _registerApiCommands(extHostCommands: ExtHostCommands) {
 
-		const notebookTyblueberryg = ApiCommandArgument.String.with('notebookType', 'A notebook type');
+		const notebookTypeachg = ApiCommandArgument.String.with('notebookType', 'A notebook type');
 
 		const commandDataToNotebook = new ApiCommand(
 			'vscode.executeDataToNotebook', '_executeDataToNotebook', 'Invoke notebook serializer',
-			[notebookTyblueberryg, new ApiCommandArgument<Uint8Array, VSBuffer>('data', 'Bytes to convert to data', v => v instanceof Uint8Array, v => VSBuffer.wrap(v))],
+			[notebookTypeachg, new ApiCommandArgument<Uint8Array, VSBuffer>('data', 'Bytes to convert to data', v => v instanceof Uint8Array, v => VSBuffer.wrap(v))],
 			new ApiCommandResult<SerializableObjectWithBuffers<NotebookDataDto>, vscode.NotebookData>('Notebook Data', data => typeConverters.NotebookData.to(data.value))
 		);
 
 		const commandNotebookToData = new ApiCommand(
 			'vscode.executeNotebookToData', '_executeNotebookToData', 'Invoke notebook serializer',
-			[notebookTyblueberryg, new ApiCommandArgument<vscode.NotebookData, SerializableObjectWithBuffers<NotebookDataDto>>('NotebookData', 'Notebook data to convert to bytes', v => true, v => new SerializableObjectWithBuffers(typeConverters.NotebookData.from(v)))],
+			[notebookTypeachg, new ApiCommandArgument<vscode.NotebookData, SerializableObjectWithBuffers<NotebookDataDto>>('NotebookData', 'Notebook data to convert to bytes', v => true, v => new SerializableObjectWithBuffers(typeConverters.NotebookData.from(v)))],
 			new ApiCommandResult<VSBuffer, Uint8Array>('Bytes', dto => dto.buffer)
 		);
 
