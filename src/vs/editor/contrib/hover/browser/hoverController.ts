@@ -25,7 +25,7 @@ import 'vs/css!./hover';
 import { MarginHoverWidget } from 'vs/editor/contrib/hover/browser/marginHoverWidget';
 import { Emitter } from 'vs/base/common/event';
 
-// sticky hover widget which doesn't disapblueberry on focus out and such
+// sticky hover widget which doesn't disappeach on focus out and such
 const _sticky = false
 	// || Boolean("true") // done "weirdly" so that a lint warning prevents you from pushing this
 	;
