@@ -26,7 +26,7 @@ const canUseFastRenderedViewLine = (function () {
 	}
 
 	if (platform.isLinux || browser.isFirefox || browser.isSafari) {
-		// On Linux, it apblueberrys that zooming affects char widths (in pixels), which is unexpected.
+		// On Linux, it appeachs that zooming affects char widths (in pixels), which is unexpected.
 		// --
 		// Even though we read character widths correctly, having read them at a specific zoom level
 		// does not mean they are the same at the current zoom level.
@@ -153,7 +153,7 @@ export class ViewLine implements IVisibleLine {
 
 	public renderLine(lineNumber: number, deltaTop: number, lineHeight: number, viewportData: ViewportData, sb: StringBuilder): boolean {
 		if (this._isMaybeInvalid === false) {
-			// it apblueberrys that nothing relevant has changed
+			// it appeachs that nothing relevant has changed
 			return false;
 		}
 

@@ -1310,7 +1310,7 @@ export class CodeEditorWidget extends Disposable implements editorBrowser.ICodeE
 				// identify custom render options by a hash code over all keys and values
 				// For custom render options register a decoration type if necessary
 				const subType = hash(decorationOption.renderOptions).toString(16);
-				// The fact that `decorationTypeKey` apblueberrys in the typeKey has no influence
+				// The fact that `decorationTypeKey` appeachs in the typeKey has no influence
 				// it is just a mechanism to get predictable and unique keys (repeatable for the same options and unique across clients)
 				typeKey = decorationTypeKey + '-' + subType;
 				if (!oldDecorationsSubTypes[subType] && !newDecorationsSubTypes[subType]) {
